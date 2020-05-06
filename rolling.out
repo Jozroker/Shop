@@ -1,0 +1,32 @@
+2020-05-06 18:56:15 DEBUG find user by email 
+2020-05-06 18:56:15 ERROR text  is not email
+2020-05-06 18:56:15 DEBUG empty registration form
+2020-05-06 18:56:15 DEBUG user not saved
+2020-05-06 18:56:16 INFO  filtering request
+2020-05-06 18:56:16 DEBUG find user by email 
+2020-05-06 18:56:16 ERROR text  is not email
+2020-05-06 18:56:16 DEBUG empty registration form
+2020-05-06 18:56:16 DEBUG user not saved
+2020-05-06 18:56:18 INFO  filtering request
+2020-05-06 18:56:18 DEBUG find user by email 
+2020-05-06 18:56:18 ERROR text  is not email
+2020-05-06 18:56:18 DEBUG empty registration form
+2020-05-06 18:56:18 DEBUG user not saved
+2020-05-06 18:56:59 INFO  filtering request
+2020-05-06 18:56:59 DEBUG find user by email 
+2020-05-06 18:56:59 ERROR text  is not email
+2020-05-06 18:56:59 DEBUG empty registration form
+2020-05-06 18:56:59 DEBUG user not saved
+2020-05-06 18:57:01 INFO  filtering request
+2020-05-06 18:57:01 DEBUG find user by email 
+2020-05-06 18:57:01 ERROR text  is not email
+2020-05-06 18:57:01 DEBUG empty registration form
+2020-05-06 18:57:01 DEBUG user not saved
+2020-05-06 18:57:01 INFO  filtering request
+2020-05-06 18:57:01 INFO  load login.jsp page
+2020-05-06 18:57:05 INFO  filtering request
+2020-05-06 18:57:05 DEBUG find user by email mail@mail
+2020-05-06 18:57:05 INFO  filtering request
+2020-05-06 18:57:06 INFO  filtering request
+2020-05-06 18:57:06 DEBUG find user by email mail@mail
+2020-05-06 18:57:07 INFO  filtering request

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25a9c77e-e280-4ff5-a652-970e2b375550" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/027520c1bda44282bd9e7fbfe3c649e151217a41" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/11a3724cb8e43211b609c18eafd022377be7937b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/16c841072742f24edfb63d62f4da7ea207d6a9cd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1effd5027b05eaab64df4f389b36e9849e157321" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/451a4115292570b8281ac79216365613fec82423" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/462850454bcd4afaf14f40bf6c77afe3902977c7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/614c87ad0dc5bc7ab8ef663da2eab349bc4d67dc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/6412fee14c90fc7a61d6288ee95ccac919e0af06" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85ee523d01e5e19376db640e846c91bbcb0a1c22" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/885bd0c4fdfae0b5daabe33ef285ec8906932372" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/98ad69ff2a374a7fe741e17bb1554a5d8a468f53" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a03b569343d9aea73c7152d775c1c066e79c353f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a852e41c9611e2544fe54f384b7e01ca71b834e6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad7531dbdff5f14e54c3b1b836068be2960b6e9f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af170f24bbfd32b7962684e8727b32e20b3648b5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1a5498e1c50727f0ce12e64ab62714f1af98530" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c25694e99321b29dd981471765f5e841beef14ca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/a/ca67bcd81ebd75b77963aa28cd34f5adecc6ab63" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cba3df22242d379bdb72d00919d2e8d49101d1bf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdf9c4aecae5e2097d1c38b0749c16c01efe7f0b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db89a974287b539189e6f16bc6d4bcb8b60bc7dd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd51f7041d5a8d7bb17c79a85099a350e198ae09" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df2ff92f443112fac00407c9263e0b8ca3fd693d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e111bac255aaa31737967e4a9a82a594aa692ec1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e276438b6af6b388ac39e61d03b2ba7ced1a86b9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e537a14788465a379cbe56661b21eeb4c61828aa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e56c89fadcbb62cf193e7ac5322d246f6075058a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f315205684b42a1089c8013b42ae5e9e9dd837c5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f89940ea8e60edce692d122250c87a998dd46768" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/LoginController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="JUnit5 Test Class" />
+        <option value="Jsp File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\PC_Educate\Programming\java\shop\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bDLTv1nLx0taEQDR5m3Sk5LYaw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../converter" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ua.com.lviv.tc.service.impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp\WEB-INF" />
+      <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ua.com.lviv.tc.service" />
+      <recent name="ua.com.lviv.tc.service.impl" />
+      <recent name="ua.com.lviv.tc.repositories.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.Maven">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.repositories.impl.Main" />
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.com.lviv.tc.repositories.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.service.impl.Main" />
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.com.lviv.tc.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Maven" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Maven.Maven" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25a9c77e-e280-4ff5-a652-970e2b375550" name="Default Changelist" comment="" />
+      <created>1588161728596</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588161728596</updated>
+      <workItem from="1588161730930" duration="7265000" />
+      <workItem from="1588169463007" duration="231000" />
+      <workItem from="1588169824892" duration="8217000" />
+      <workItem from="1588178700180" duration="1672000" />
+      <workItem from="1588183671070" duration="18459000" />
+      <workItem from="1588324397994" duration="12605000" />
+      <workItem from="1588608698142" duration="9389000" />
+      <workItem from="1588760289108" duration="21551000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="936" y="197" key="#Auto_Import" timestamp="1588166728628">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="936" y="197" key="#Auto_Import/0.0.1920.1080@0.0.1920.1080" timestamp="1588166728628" />
+    <state x="936" y="197" key="#Project_Structure" timestamp="1588173846564">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="936" y="197" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1588173846564" />
+    <state x="309" y="176" width="1092" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588284673106">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="309" y="176" width="1092" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588284673106" />
+    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1588782338172">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1588782338172" />
+    <state x="1258" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588163008656">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1258" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588163008656" />
+    <state x="969" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588175075013">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="969" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588175075013" />
+    <state x="821" y="272" key="#xdebugger.evaluate" timestamp="1588772330291">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="821" y="272" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1588772330291" />
+    <state x="549" y="134" key="CommitChangelistDialog2" timestamp="1588781252163">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="549" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1588781252163" />
+    <state x="1220" y="294" key="FileChooserDialogImpl" timestamp="1588770567295">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1220" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1588770567295" />
+    <state width="1878" height="284" key="GridCell.Tab.0.bottom" timestamp="1588781239206">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588781239206" />
+    <state width="1878" height="284" key="GridCell.Tab.0.center" timestamp="1588781239206">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588781239206" />
+    <state width="1878" height="284" key="GridCell.Tab.0.left" timestamp="1588781239206">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588781239206" />
+    <state width="1878" height="284" key="GridCell.Tab.0.right" timestamp="1588781239206">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588781239206" />
+    <state width="1878" height="254" key="GridCell.Tab.1.bottom" timestamp="1588778541141">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="254" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588778541141" />
+    <state width="1878" height="254" key="GridCell.Tab.1.center" timestamp="1588778541141">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="254" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588778541141" />
+    <state width="1878" height="254" key="GridCell.Tab.1.left" timestamp="1588778541141">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="254" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588778541141" />
+    <state width="1878" height="254" key="GridCell.Tab.1.right" timestamp="1588778541141">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="254" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588778541141" />
+    <state x="874" y="194" key="Maven.ArtifactSearchDialog" timestamp="1588166951626">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="874" y="194" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588166951626" />
+    <state x="824" y="113" key="SettingsEditor" timestamp="1588243163798">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="824" y="113" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1588243163798" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1588782561523">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1588782561523" />
+    <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588285171325">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588285171325" />
+    <state x="1096" y="245" key="run.anything.popup" timestamp="1588281476206">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1096" y="245" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588281476206" />
+    <state x="1103" y="239" key="search.everywhere.popup" timestamp="1588163818935">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1103" y="239" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588163818935" />
+  </component>
+</project>
