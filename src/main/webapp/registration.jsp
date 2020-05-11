@@ -43,7 +43,7 @@
 </head>
 <body>
 
-    <form id="registrationForm" action="/shop/registration" method="post">
+    <form id="registrationForm" action="/registration" method="post">
     <div class="registrationFormDiv">
         <div class="form-group">
             <label for="fname">First Name</label>
@@ -65,7 +65,7 @@
         <button type="submit" class="btn btn-primary" id="btn" class="btn">Register</button>
     </div>
     </form>
-    <form action="/shop/login" method="get">
+    <form action="/login" method="get">
         <div id="logInButton" class="registrationFormDiv">
             <button type="submit" class="btn btn-primary" class="btn">Log in</button>
         </div>

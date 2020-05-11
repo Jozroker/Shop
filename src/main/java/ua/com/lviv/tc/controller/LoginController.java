@@ -47,7 +47,7 @@ public class LoginController extends HttpServlet {
             if (user.getPassword().equals(password)) {
                 req.getSession().setAttribute("email", email);
                 req.getSession().setAttribute("role", role);
-                url = "index.jsp";
+                url = "product-list.jsp";
                 resp.sendRedirect("menu");
             } else {
                 log.error("user's password with email " + email + " is invalid");

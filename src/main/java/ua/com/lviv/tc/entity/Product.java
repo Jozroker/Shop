@@ -8,14 +8,20 @@ public class Product {
 
     private String name;
 
-    private String desc;
+    private String description;
 
     private BigDecimal price;
 
-    public Product(Integer id, String name, String desc, BigDecimal price) {
+    public Product(Integer id, String name, String description, BigDecimal price) {
         this.id = id;
         this.name = name;
-        this.desc = desc;
+        this.description = description;
+        this.price = price;
+    }
+
+    public Product(String name, String description, BigDecimal price) {
+        this.name = name;
+        this.description = description;
         this.price = price;
     }
 
@@ -36,11 +42,11 @@ public class Product {
     }
 
     public String getDesc() {
-        return desc;
+        return description;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDesc(String description) {
+        this.description = description;
     }
 
     public BigDecimal getPrice() {
@@ -56,7 +62,7 @@ public class Product {
         return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", desc='" + desc + '\'' +
+                ", desc='" + description + '\'' +
                 ", price=" + price +
                 '}';
     }

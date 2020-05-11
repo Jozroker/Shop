@@ -23,8 +23,8 @@ public class LoginFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         log.info("filtering request");
         final HttpSession session = ((HttpServletRequest) servletRequest).getSession();
-        boolean isLoginPage = ((HttpServletRequest) servletRequest).getRequestURI().equals("/shop/login");
-        boolean isRegistrationPage = ((HttpServletRequest) servletRequest).getRequestURI().equals("/shop/registration");
+        boolean isLoginPage = ((HttpServletRequest) servletRequest).getRequestURI().equals("/login");
+        boolean isRegistrationPage = ((HttpServletRequest) servletRequest).getRequestURI().equals("/registration");
         boolean isUserLoggedIn = (session != null && session.getAttribute("email") != null);
         if (isUserLoggedIn || isLoginPage || isRegistrationPage) {
 //            log.info("user is logged in");

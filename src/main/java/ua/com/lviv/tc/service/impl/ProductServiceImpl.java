@@ -12,12 +12,18 @@ import java.util.Optional;
 public class ProductServiceImpl implements ProductService {
 
     private ProductRepository productRepository;
+    private static ProductService instance = new ProductServiceImpl();
 
     private Logger log = Logger.getLogger(ProductServiceImpl.class);
 
     public ProductServiceImpl() {
         this.productRepository = ProductRepositoryImpl.getInstance();
     }
+
+    public static ProductService getInstance() {
+        return instance;
+    }
+
 
     @Override
     public void save(Product product) {

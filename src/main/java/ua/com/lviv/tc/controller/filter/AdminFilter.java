@@ -31,13 +31,13 @@ public class AdminFilter implements Filter {
                 filterChain.doFilter(servletRequest, servletResponse);
             } else {
                 log.info("this isn't admin");
-                httpRequest.getRequestDispatcher("/not_admin.jsp").forward(servletRequest, servletResponse);
+                httpRequest.getRequestDispatcher("/not-admin.jsp").forward(servletRequest, servletResponse);
             }
         } else {
             log.info("user not logging in");
 //            ((HttpServletResponse) servletResponse).setStatus(403);
 //            ((HttpServletResponse) servletResponse).sendRedirect("error");
-            ((HttpServletResponse) servletResponse).sendRedirect("/shop/login");
+            ((HttpServletResponse) servletResponse).sendRedirect("/login");
 
         }
     }

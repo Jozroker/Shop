@@ -1,5 +1,3 @@
 
 z
 java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ÉòÇºúÿÿÿÿ8”éŸ„.
-]
-java:S3655";Call "userOptional.isPresent()" before accessing the value.(°‹ˆàûÿÿÿÿ8†œ.

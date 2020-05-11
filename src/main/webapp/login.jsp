@@ -81,6 +81,7 @@
             }
         );
     </script>
+<%--    <script type="application/javascript" src="resources/javascript/createProductScript.js"></script>--%>
     <style type="text/css">
         #loginFormDiv {
             margin-left: 40%;
@@ -111,8 +112,8 @@
 
 <%--    <input form="registerForm" type="submit" value="Register">--%>
 <%--action="/shop/login"--%>
-    <form id="loginForm" action="/shop/login" method="post"></form>
-    <form id="registerForm" action="/shop/registration" method="get"></form>
+    <form id="loginForm" action="/login" method="post"></form>
+    <form id="registerForm" action="/registration" method="get"></form>
     <div id="loginFormDiv">
         <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>

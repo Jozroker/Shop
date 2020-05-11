@@ -14,7 +14,7 @@
     <p>First name: ${fname}</p><br>
     <p>Last name: ${lname}</p><br>
     <p>Email: ${email}</p><br>
-    <form action="/shop/menu" method="get">
+    <form action="/product_list" method="get">
         <input type="submit" value="Menu">
     </form>
 </body>
