@@ -7,6 +7,7 @@ import ua.com.lviv.tc.entity.User;
 import ua.com.lviv.tc.repositories.BucketRepository;
 
 import java.sql.*;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,47 +30,47 @@ public class BucketRepositoryImpl implements BucketRepository {
     }
 
     @Override
-    public void save(Bucket bucket) {
-        for (Integer id : bucket.getProductsId()) {
-            try (PreparedStatement statement = connection.prepareStatement("insert into bucket(id, user_id, product_id, purchase_date) value (?, ?, ?, ?)")) {
-                statement.setInt(1, bucket.getId());
-                statement.setInt(2, bucket.getUserId());
-                statement.setInt(3, id);
-                statement.setDate(4, Date.valueOf(bucket.getPurchaseDate()));
-                statement.execute();
-            } catch (SQLException e) {
-                log.error("Error while saving bucket " + bucket.toString(), e);
+    public Bucket save(Bucket bucket) {
+        try (PreparedStatement statement = connection.prepareStatement("insert into bucket(purchase_date) value (?)", PreparedStatement.RETURN_GENERATED_KEYS)) {
+            statement.setTimestamp(1, Timestamp.from(Instant.from(bucket.getPurchaseDate())));
+            statement.execute();
+            try (ResultSet result = statement.getGeneratedKeys()) {
+                result.next();
+                bucket.setId(result.getInt(1));
             }
+        } catch (SQLException e) {
+            log.error("Error while saving bucket " + bucket.toString(), e);
         }
+        return bucket;
     }
 
     @Override
     public void update(Bucket bucket) {
-        List<Integer> productsInBucket = getProductsInBucket(bucket);
-        for (Integer id : bucket.getProductsId()) {
-            if (productsInBucket.contains(id)) {
-                try (PreparedStatement statement = connection.prepareStatement("update bucket set user_id = ?, product_id = ?, purchase_date = ? where id = ?")) {
-                    statement.setInt(1, bucket.getUserId());
-                    statement.setInt(2, id);
-                    statement.setDate(3, Date.valueOf(bucket.getPurchaseDate()));
-                    statement.setInt(4, bucket.getId());
-                    statement.execute();
-                } catch (SQLException e) {
-                    log.error("Error while updating bucket " + bucket.toString(), e);
-                }
-            } else {
-                try (PreparedStatement statement = connection.prepareStatement("insert into bucket(id, user_id, product_id, purchase_date) value (?, ?, ?, ?)")) {
-                    statement.setInt(1, bucket.getId());
-                    statement.setInt(2, bucket.getUserId());
-                    statement.setInt(3, id);
-                    statement.setDate(4, Date.valueOf(bucket.getPurchaseDate()));
-                    statement.execute();
-                } catch (SQLException e) {
-                    log.error("Error while updating bucket " + bucket.toString(), e);
-                }
-            }
-
-        }
+//        List<Integer> productsInBucket = getProductsInBucket(bucket);
+//        for (Integer id : bucket.getProductsId()) {
+//            if (productsInBucket.contains(id)) {
+//                try (PreparedStatement statement = connection.prepareStatement("update bucket set user_id = ?, product_id = ?, purchase_date = ? where id = ?")) {
+//                    statement.setInt(1, bucket.getUserId());
+//                    statement.setInt(2, id);
+//                    statement.setTimestamp(3, Timestamp.from(Instant.from(bucket.getPurchaseDate())));
+//                    statement.setInt(4, bucket.getId());
+//                    statement.execute();
+//                } catch (SQLException e) {
+//                    log.error("Error while updating bucket " + bucket.toString(), e);
+//                }
+//            } else {
+//                try (PreparedStatement statement = connection.prepareStatement("insert into bucket(id, user_id, product_id, purchase_date) value (?, ?, ?, ?)")) {
+//                    statement.setInt(1, bucket.getId());
+//                    statement.setInt(2, bucket.getUserId());
+//                    statement.setInt(3, id);
+//                    statement.setTimestamp(4, Timestamp.from(Instant.from(bucket.getPurchaseDate())));
+//                    statement.execute();
+//                } catch (SQLException e) {
+//                    log.error("Error while updating bucket " + bucket.toString(), e);
+//                }
+//            }
+//
+//        }
     }
 
     @Override
@@ -88,26 +89,27 @@ public class BucketRepositoryImpl implements BucketRepository {
 
     @Override
     public Optional<Bucket> findById(Integer id) {
-        Bucket bucket = null;
-        try (PreparedStatement statement = connection.prepareStatement("select * from bucket where id = ?")) {
-            statement.setInt(1, id);
-            List<Integer> products = new ArrayList<>();
-            int bucketId = 0;
-            int userId = 0;
-            LocalDate date = null;
-            try (ResultSet result = statement.executeQuery()) {
-                while(result.next()) {
-                    bucketId = result.getInt("id");
-                    userId = result.getInt("user_id");
-                    date = result.getDate("purchase_date").toLocalDate();
-                    products.add(result.getInt("product_id"));
-                }
-            }
-            bucket = new Bucket(bucketId, userId, products, date);
-        } catch (SQLException e) {
-            log.error("Error while finding bucket by id " + id, e);
-        }
-        return Optional.ofNullable(bucket);
+//        Bucket bucket = null;
+//        try (PreparedStatement statement = connection.prepareStatement("select * from bucket where id = ?")) {
+//            statement.setInt(1, id);
+//            List<Integer> products = new ArrayList<>();
+//            int bucketId = 0;
+//            int userId = 0;
+//            LocalDate date = null;
+//            try (ResultSet result = statement.executeQuery()) {
+//                while(result.next()) {
+//                    bucketId = result.getInt("id");
+//                    userId = result.getInt("user_id");
+//                    date = result.getDate("purchase_date").toLocalDate();
+//                    products.add(result.getInt("product_id"));
+//                }
+//            }
+//            bucket = new Bucket(bucketId, userId, products, date);
+//        } catch (SQLException e) {
+//            log.error("Error while finding bucket by id " + id, e);
+//        }
+//        return Optional.ofNullable(bucket);
+        return null;
     }
 
     @Override

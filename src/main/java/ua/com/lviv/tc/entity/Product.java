@@ -12,17 +12,21 @@ public class Product {
 
     private BigDecimal price;
 
-    public Product(Integer id, String name, String description, BigDecimal price) {
+    private Integer count;
+
+    public Product(Integer id, String name, String description, BigDecimal price, Integer count) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
+        this.count = count;
     }
 
-    public Product(String name, String description, BigDecimal price) {
+    public Product(String name, String description, BigDecimal price, Integer count) {
         this.name = name;
         this.description = description;
         this.price = price;
+        this.count = count;
     }
 
     public Integer getId() {
@@ -41,11 +45,11 @@ public class Product {
         this.name = name;
     }
 
-    public String getDesc() {
+    public String getDescription() {
         return description;
     }
 
-    public void setDesc(String description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
@@ -57,6 +61,14 @@ public class Product {
         this.price = price;
     }
 
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
@@ -64,6 +76,7 @@ public class Product {
                 ", name='" + name + '\'' +
                 ", desc='" + description + '\'' +
                 ", price=" + price +
+                ", count=" + count +
                 '}';
     }
 }

@@ -1,46 +1,52 @@
-2020-05-11 12:54:42 DEBUG product Product{id=null, name='asd', desc='asd', price=12} is added successfully
-2020-05-11 12:54:42 INFO  filtering request
-2020-05-11 12:54:42 DEBUG find all products
-2020-05-11 12:55:02 INFO  filtering admin request
-2020-05-11 12:55:02 INFO  this is admin
-2020-05-11 12:55:02 INFO  filtering request
-2020-05-11 12:55:02 DEBUG request to get create product page
-2020-05-11 12:55:03 INFO  filtering admin request
-2020-05-11 12:55:03 INFO  this is admin
-2020-05-11 12:55:03 INFO  filtering request
-2020-05-11 12:55:03 DEBUG request to add new product
-2020-05-11 12:55:03 ERROR fields of create product is empty
-2020-05-11 12:55:03 INFO  filtering admin request
-2020-05-11 12:55:03 INFO  this is admin
-2020-05-11 12:55:03 INFO  filtering request
-2020-05-11 12:55:03 DEBUG request to get create product page
-2020-05-11 12:55:04 INFO  filtering admin request
-2020-05-11 12:55:04 INFO  this is admin
-2020-05-11 12:55:04 INFO  filtering request
-2020-05-11 12:55:04 DEBUG request to add new product
-2020-05-11 12:55:04 ERROR fields of create product is empty
-2020-05-11 12:55:04 INFO  filtering admin request
-2020-05-11 12:55:04 INFO  this is admin
-2020-05-11 12:55:04 INFO  filtering request
-2020-05-11 12:55:04 DEBUG request to get create product page
-2020-05-11 12:55:08 INFO  filtering admin request
-2020-05-11 12:55:08 INFO  this is admin
-2020-05-11 12:55:08 INFO  filtering request
-2020-05-11 12:55:08 DEBUG request to add new product
-2020-05-11 12:55:08 DEBUG save product Product{id=null, name='dd', desc='dd', price=2}
-2020-05-11 12:55:08 ERROR Error while saving product Product{id=null, name='dd', desc='dd', price=2}
-java.sql.SQLException: Field 'count' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+2020-05-11 18:52:57 ERROR no user with email mail@mail
+2020-05-11 18:52:57 INFO  filtering request
+2020-05-11 18:52:57 INFO  load login.jsp page
+2020-05-11 18:53:15 INFO  init login filter
+2020-05-11 18:53:15 INFO  init admin filter
+2020-05-11 18:54:35 INFO  creating connection to database
+2020-05-11 18:54:35 DEBUG connection was created successfully
+2020-05-11 18:54:35 INFO  creating connection to database
+2020-05-11 18:54:35 DEBUG connection was created successfully
+2020-05-11 18:54:35 INFO  filtering request
+2020-05-11 18:54:36 INFO  load login.jsp page
+2020-05-11 18:55:02 INFO  filtering request
+2020-05-11 18:55:02 DEBUG find user by email mail@mail
+2020-05-11 18:55:02 INFO  creating connection to database
+2020-05-11 18:55:02 DEBUG connection was created successfully
+2020-05-11 18:55:02 INFO  filtering request
+2020-05-11 18:55:02 DEBUG find all products
+2020-05-11 18:55:05 INFO  filtering request
+2020-05-11 18:55:05 DEBUG find all products
+2020-05-11 18:55:34 INFO  filtering request
+2020-05-11 18:55:34 INFO  exit from all pages to login.jsp page
+2020-05-11 18:55:34 INFO  filtering request
+2020-05-11 18:55:34 INFO  load login.jsp page
+2020-05-11 18:55:38 INFO  filtering request
+2020-05-11 18:55:38 DEBUG find user by email mail@mail
+2020-05-11 18:55:38 INFO  filtering request
+2020-05-11 18:55:38 DEBUG find all products
+2020-05-11 18:55:40 INFO  filtering request
+2020-05-11 18:55:40 DEBUG find all products
+2020-05-11 18:56:00 INFO  filtering request
+2020-05-11 18:56:00 DEBUG find all products
+2020-05-11 18:56:18 INFO  filtering request
+2020-05-11 18:56:18 DEBUG find all products
+2020-05-11 18:56:35 INFO  filtering request
+2020-05-11 18:56:35 DEBUG find all products
+2020-05-11 18:56:41 INFO  filtering request
+2020-05-11 18:56:41 DEBUG find all products
+2020-05-11 18:59:58 INFO  filtering request
+2020-05-11 18:59:58 DEBUG find all products
+2020-05-11 18:59:58 ERROR Error while finding all products
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 197 508 milliseconds ago.  The last packet sent successfully to the server was 197 509 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
-	at ua.com.lviv.tc.repositories.impl.ProductRepositoryImpl.save(ProductRepositoryImpl.java:41)
-	at ua.com.lviv.tc.repositories.impl.ProductRepositoryImpl.save(ProductRepositoryImpl.java:18)
-	at ua.com.lviv.tc.service.impl.ProductServiceImpl.save(ProductServiceImpl.java:31)
-	at ua.com.lviv.tc.service.impl.ProductServiceImpl.save(ProductServiceImpl.java:12)
-	at ua.com.lviv.tc.controller.AdminCreateProductController.doPost(AdminCreateProductController.java:47)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1024)
+	at ua.com.lviv.tc.repositories.impl.ProductRepositoryImpl.findAll(ProductRepositoryImpl.java:65)
+	at ua.com.lviv.tc.service.impl.ProductServiceImpl.findAll(ProductServiceImpl.java:43)
+	at ua.com.lviv.tc.controller.ProductListController.doGet(ProductListController.java:26)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
@@ -48,9 +54,6 @@ java.sql.SQLException: Field 'count' doesn't have a default value
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
 	at ua.com.lviv.tc.controller.filter.LoginFilter.doFilter(LoginFilter.java:31)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at ua.com.lviv.tc.controller.filter.AdminFilter.doFilter(AdminFilter.java:31)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
@@ -63,7 +66,33 @@ java.sql.SQLException: Field 'count' doesn't have a default value
 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
 	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
 	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: The last packet successfully received from the server was 197 508 milliseconds ago.  The last packet sent successfully to the server was 197 509 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1153)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:951)
+	... 28 more
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
+	... 33 more

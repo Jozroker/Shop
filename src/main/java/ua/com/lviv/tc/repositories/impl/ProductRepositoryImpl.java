@@ -33,22 +33,24 @@ public class ProductRepositoryImpl implements ProductRepository {
     }
 
     @Override
-    public void save(Product product) {
-        try (PreparedStatement statement = connection.prepareStatement("insert into product(name, description, price) value (?, ?, ?)")) {
+    public Product save(Product product) {
+        try (PreparedStatement statement = connection.prepareStatement("insert into product(name, description, price, count) value (?, ?, ?, ?)")) {
             statement.setString(1, product.getName());
-            statement.setString(2, product.getDesc());
+            statement.setString(2, product.getDescription());
             statement.setBigDecimal(3, product.getPrice());
+            statement.setInt(4, product.getCount());
             statement.execute();
         } catch (SQLException e) {
             log.error("Error while saving product " + product.toString(), e);
         }
+        return product;
     }
 
     @Override
     public void update(Product product) {
         try (PreparedStatement statement = connection.prepareStatement("update product set name = ?, descroption = ?, price = ? where id = ?")) {
             statement.setString(1, product.getName());
-            statement.setString(2, product.getDesc());
+            statement.setString(2, product.getDescription());
             statement.setBigDecimal(3, product.getPrice());
             statement.setInt(4, product.getId());
             statement.execute();
@@ -66,7 +68,8 @@ public class ProductRepositoryImpl implements ProductRepository {
                 String name = result.getString("name");
                 String description = result.getString("description");
                 BigDecimal price = result.getBigDecimal("price");
-                Product product = new Product(productId, name, description, price);
+                Integer count = result.getInt("count");
+                Product product = new Product(productId, name, description, price, count);
                 products.add(product);
             }
         } catch (SQLException e) {
@@ -85,7 +88,8 @@ public class ProductRepositoryImpl implements ProductRepository {
                 String name = result.getString("name");
                 String desc = result.getString("description");
                 BigDecimal price = result.getBigDecimal("price");
-                product = new Product(id, name, desc, price);
+                Integer count = result.getInt("count");
+                product = new Product(id, name, desc, price, count);
             }
         } catch (SQLException e) {
             log.error("Error while finding product by id " + id, e);

@@ -1,60 +1,92 @@
-2020-05-11 12:46:37 INFO  filtering admin request
-2020-05-11 12:46:37 INFO  this is admin
-2020-05-11 12:46:37 INFO  filtering request
-2020-05-11 12:46:37 DEBUG request to get create product page
-2020-05-11 12:46:38 INFO  filtering admin request
-2020-05-11 12:46:38 INFO  this is admin
-2020-05-11 12:46:38 INFO  filtering request
-2020-05-11 12:46:38 DEBUG request to add new product
-2020-05-11 12:46:38 ERROR fields of create product is empty
-2020-05-11 12:46:38 INFO  filtering admin request
-2020-05-11 12:46:38 INFO  this is admin
-2020-05-11 12:46:38 INFO  filtering request
-2020-05-11 12:46:38 DEBUG request to get create product page
-2020-05-11 12:50:51 INFO  init login filter
-2020-05-11 12:50:51 INFO  init admin filter
-2020-05-11 12:50:53 INFO  creating connection to database
-2020-05-11 12:50:54 DEBUG connection was created successfully
-2020-05-11 12:50:54 INFO  filtering admin request
-2020-05-11 12:50:54 INFO  user not logging in
-2020-05-11 12:50:54 INFO  creating connection to database
-2020-05-11 12:50:54 DEBUG connection was created successfully
-2020-05-11 12:50:54 INFO  filtering request
-2020-05-11 12:50:54 INFO  load login.jsp page
-2020-05-11 12:50:56 INFO  filtering request
-2020-05-11 12:50:56 DEBUG find user by email admin@mail
-2020-05-11 12:50:56 INFO  filtering request
-2020-05-11 12:50:58 INFO  filtering admin request
-2020-05-11 12:50:58 INFO  this is admin
-2020-05-11 12:50:58 INFO  filtering request
-2020-05-11 12:50:58 DEBUG request to get create product page
-2020-05-11 12:50:59 INFO  filtering admin request
-2020-05-11 12:50:59 INFO  this is admin
-2020-05-11 12:50:59 INFO  filtering request
-2020-05-11 12:50:59 DEBUG request to add new product
-2020-05-11 12:50:59 ERROR fields of create product is empty
-2020-05-11 12:51:35 INFO  init login filter
-2020-05-11 12:51:35 INFO  init admin filter
-2020-05-11 12:51:36 INFO  creating connection to database
-2020-05-11 12:51:36 DEBUG connection was created successfully
-2020-05-11 12:51:36 INFO  filtering admin request
-2020-05-11 12:51:36 INFO  user not logging in
-2020-05-11 12:51:36 INFO  creating connection to database
-2020-05-11 12:51:36 DEBUG connection was created successfully
-2020-05-11 12:51:36 INFO  filtering request
-2020-05-11 12:51:36 INFO  load login.jsp page
-2020-05-11 12:51:40 INFO  filtering request
-2020-05-11 12:51:40 DEBUG find user by email admin@mail
-2020-05-11 12:51:40 INFO  filtering request
-2020-05-11 12:51:43 INFO  filtering admin request
-2020-05-11 12:51:43 INFO  this is admin
-2020-05-11 12:51:43 INFO  filtering request
-2020-05-11 12:51:43 DEBUG request to get create product page
-2020-05-11 12:53:28 INFO  init login filter
-2020-05-11 12:53:28 INFO  init admin filter
-2020-05-11 12:53:31 INFO  creating connection to database
-2020-05-11 12:53:32 DEBUG connection was created successfully
-2020-05-11 12:53:32 INFO  filtering admin request
-2020-05-11 12:53:32 INFO  user not logging in
-2020-05-11 12:53:32 INFO  creating connection to database
-2020-05-11 12:53:32 DEBUG connection was created successfully
+2020-05-11 18:52:03 ERROR no user with email mail@mail
+2020-05-11 18:52:03 INFO  filtering request
+2020-05-11 18:52:03 INFO  load login.jsp page
+2020-05-11 18:52:38 INFO  filtering request
+2020-05-11 18:52:38 INFO  load login.jsp page
+2020-05-11 18:52:42 INFO  filtering request
+2020-05-11 18:52:42 DEBUG find user by email mail@mail
+2020-05-11 18:52:42 ERROR Error while finding user by email mail@mail
+java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1674)
+	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1590)
+	at ua.com.lviv.tc.repositories.impl.UserRepositoryImpl.findByEmail(UserRepositoryImpl.java:127)
+	at ua.com.lviv.tc.service.impl.UserServiceImpl.findByEmail(UserServiceImpl.java:36)
+	at ua.com.lviv.tc.controller.LoginController.doPost(LoginController.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at ua.com.lviv.tc.controller.filter.LoginFilter.doFilter(LoginFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1259)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:575)
+	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1605)
+	... 28 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: The last packet successfully received from the server was 740 090 milliseconds ago.  The last packet sent successfully to the server was 740 091 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1153)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:951)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1024)
+	at ua.com.lviv.tc.repositories.impl.UserRepositoryImpl.findByEmail(UserRepositoryImpl.java:129)
+	... 26 more
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
+	... 33 more

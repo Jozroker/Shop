@@ -1,7 +1,10 @@
 package ua.com.lviv.tc.controller;
 
 import org.apache.log4j.Logger;
+import ua.com.lviv.tc.entity.Bucket;
 import ua.com.lviv.tc.entity.User;
+import ua.com.lviv.tc.repositories.BucketRepository;
+import ua.com.lviv.tc.repositories.impl.BucketRepositoryImpl;
 import ua.com.lviv.tc.service.impl.UserServiceImpl;
 
 import javax.servlet.ServletException;
@@ -10,14 +13,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 @WebServlet("/registration")
 public class RegistrationController extends HttpServlet {
 
-    Logger log = Logger.getLogger(RegistrationController.class);
-
-    UserServiceImpl userService = UserServiceImpl.getInstance();
+    private Logger log = Logger.getLogger(RegistrationController.class);
+    private UserServiceImpl userService = UserServiceImpl.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

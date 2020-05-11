@@ -1,22 +1,19 @@
 package ua.com.lviv.tc.entity;
 
-import java.time.LocalDate;
-import java.util.List;
+import java.time.LocalDateTime;
 
 public class Bucket {
 
     private Integer id;
 
-    private Integer userId;
+    private LocalDateTime purchaseDate;
 
-    private List<Integer> productsId;
-
-    private LocalDate purchaseDate;
-
-    public Bucket(Integer id, Integer userId, List<Integer> productsId, LocalDate purchaseDate) {
+    public Bucket(Integer id, LocalDateTime purchaseDate) {
         this.id = id;
-        this.userId = userId;
-        this.productsId = productsId;
+        this.purchaseDate = purchaseDate;
+    }
+
+    public Bucket(LocalDateTime purchaseDate) {
         this.purchaseDate = purchaseDate;
     }
 
@@ -28,27 +25,11 @@ public class Bucket {
         this.id = id;
     }
 
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
-
-    public List<Integer> getProductsId() {
-        return productsId;
-    }
-
-    public void setProductsId(List<Integer> productsId) {
-        this.productsId = productsId;
-    }
-
-    public LocalDate getPurchaseDate() {
+    public LocalDateTime getPurchaseDate() {
         return purchaseDate;
     }
 
-    public void setPurchaseDate(LocalDate purchaseDate) {
+    public void setPurchaseDate(LocalDateTime purchaseDate) {
         this.purchaseDate = purchaseDate;
     }
 
@@ -56,8 +37,6 @@ public class Bucket {
     public String toString() {
         return "Bucket{" +
                 "id=" + id +
-                ", userId=" + userId +
-                ", productId=" + productsId +
                 ", purchaseDate=" + purchaseDate +
                 '}';
     }

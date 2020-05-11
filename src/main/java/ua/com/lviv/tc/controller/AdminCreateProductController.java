@@ -36,14 +36,16 @@ public class AdminCreateProductController extends HttpServlet {
         String name = req.getParameter("name");
         String description = req.getParameter("description");
         String priceString = req.getParameter("price");
+        String countString = req.getParameter("count");
         if (name.equals("") || description.equals("") || priceString.equals("")) {
             resp.sendRedirect("create_products");
             log.error("fields of create product is empty");
         } else {
             BigDecimal price;
             if (validatePrice(priceString)) {
+                Integer count = Integer.parseInt(countString);
                 price = new BigDecimal(priceString);
-                Product product = new Product(name, description, price);
+                Product product = new Product(name, description, price, count);
                 productService.save(product);
                 resp.sendRedirect("/product_list");
                 log.debug("product " + product + " is added successfully");

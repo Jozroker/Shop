@@ -14,13 +14,25 @@ public class User {
 
     private String email;
 
-    public User(Integer id, String firstName, String lastName, String password, String role, String email) {
+    private Integer bucketId;
+
+    public User(Integer id, String firstName, String lastName, String password, String role, String email, Integer bucketId) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
         this.role = role;
         this.email = email;
+        this.bucketId = bucketId;
+    }
+
+    public User(String firstName, String lastName, String password, String role, String email, Integer bucketId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+        this.role = role;
+        this.email = email;
+        this.bucketId = bucketId;
     }
 
     public User(String firstName, String lastName, String password, String role, String email) {
@@ -79,6 +91,14 @@ public class User {
         this.email = email;
     }
 
+    public Integer getBucketId() {
+        return bucketId;
+    }
+
+    public void setBucketId(Integer bucketId) {
+        this.bucketId = bucketId;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -88,6 +108,7 @@ public class User {
                 ", password='" + password + '\'' +
                 ", role='" + role + '\'' +
                 ", email='" + email + '\'' +
+                ", bucketId='" + bucketId + '\'' +
                 '}';
     }
 }

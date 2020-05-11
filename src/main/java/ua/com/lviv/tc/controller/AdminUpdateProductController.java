@@ -41,11 +41,13 @@ public class AdminUpdateProductController extends HttpServlet {
         String name = req.getParameter("name");
         String description = req.getParameter("description");
         String priceString = req.getParameter("price");
+        String countString = req.getParameter("count");
         BigDecimal price = new BigDecimal(0);
         if (validatePrice(priceString)) {
             price = new BigDecimal(priceString);
         }
-        Product product = new Product(id, name, description, price);
+        Integer count = Integer.parseInt(countString);
+        Product product = new Product(id, name, description, price, count);
         productService.update(product);
         resp.sendRedirect("product-list");
         log.debug("product " + product + " is updated successfully");

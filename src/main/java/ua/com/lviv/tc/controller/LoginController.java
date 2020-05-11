@@ -40,22 +40,19 @@ public class LoginController extends HttpServlet {
         String email = req.getParameter("email");
         String password = req.getParameter("password");
         Optional<User> userOptional = userService.findByEmail(email);
-        String url = "";
         if (userOptional.isPresent()) {
             User user = userOptional.get();
             String role = user.getRole();
             if (user.getPassword().equals(password)) {
                 req.getSession().setAttribute("email", email);
                 req.getSession().setAttribute("role", role);
-                url = "product-list.jsp";
-                resp.sendRedirect("menu");
+//                req.setAttribute("role", role);
+                resp.sendRedirect("product_list");
             } else {
                 log.error("user's password with email " + email + " is invalid");
-                url = "login.jsp";
                 resp.sendRedirect("login");
             }
         } else {
-            url = "login.jsp";
             resp.sendRedirect("login");
             log.error("no user with email " + email);
         }

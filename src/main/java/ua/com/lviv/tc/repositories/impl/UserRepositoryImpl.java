@@ -2,14 +2,18 @@ package ua.com.lviv.tc.repositories.impl;
 
 import org.apache.log4j.Logger;
 import ua.com.lviv.tc.config.ConnectionManager;
+import ua.com.lviv.tc.entity.Bucket;
 import ua.com.lviv.tc.entity.User;
+import ua.com.lviv.tc.repositories.BucketRepository;
 import ua.com.lviv.tc.repositories.UserRepository;
+import ua.com.lviv.tc.service.impl.BucketServiceImpl;
 
 import javax.swing.text.html.Option;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -19,6 +23,7 @@ public class UserRepositoryImpl implements UserRepository {
     private static final Logger log = Logger.getLogger(UserRepositoryImpl.class);
     private Connection connection = ConnectionManager.getConnection();
     private static UserRepositoryImpl instance;
+    private BucketRepository bucketRepository = BucketRepositoryImpl.getInstance();
 
     private UserRepositoryImpl() {
 
@@ -32,17 +37,21 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public void save(User user) {
-        try (PreparedStatement statement = connection.prepareStatement("insert into user(fname, lname, password, email, role) value (?, ?, ?, ?, ?)")) {
+    public User save(User user) {
+        Bucket bucket = new Bucket(LocalDateTime.now());
+        bucket = bucketRepository.save(bucket);
+        try (PreparedStatement statement = connection.prepareStatement("insert into user(fname, lname, password, email, role, bucket_id) value (?, ?, ?, ?, ?, ?)")) {
             statement.setString(1, user.getFirstName());
             statement.setString(2, user.getLastName());
             statement.setString(3, user.getPassword());
             statement.setString(4, user.getEmail());
             statement.setString(5, user.getRole());
+            statement.setInt(6, bucket.getId());
             statement.execute();
         } catch (SQLException e) {
             log.error("Error while saving user " + user.toString(), e);
         }
+        return user;
     }
 
     @Override
@@ -71,7 +80,8 @@ public class UserRepositoryImpl implements UserRepository {
                 String lastName = result.getString("lname");
                 String role = result.getString("role");
                 String password = result.getString("password");
-                User user = new User(userId, firstName, lastName, password, role, email);
+                Integer bucketId = result.getInt("bucket_id");
+                User user = new User(userId, firstName, lastName, password, role, email, bucketId);
                 users.add(user);
             }
         } catch (SQLException e) {
@@ -92,7 +102,8 @@ public class UserRepositoryImpl implements UserRepository {
                 String lastName = result.getString("lname");
                 String role = result.getString("role");
                 String password = result.getString("password");
-                user = new User(id, firstName, lastName, password, role, email);
+                Integer bucketId = result.getInt("bucket_id");
+                user = new User(id, firstName, lastName, password, role, email, bucketId);
             }
         } catch (SQLException e) {
             log.error("Error while finding user by id " + id, e);
@@ -122,7 +133,8 @@ public class UserRepositoryImpl implements UserRepository {
                 String lastName = result.getString("lname");
                 String role = result.getString("role");
                 String password = result.getString("password");
-                user = new User(id, firstName, lastName, password, role, email);
+                Integer bucketId = result.getInt("bucket_id");
+                user = new User(id, firstName, lastName, password, role, email, bucketId);
             }
         } catch (SQLException e) {
             log.error("Error while finding user by email " + email, e);
