@@ -1,1 +1,36 @@
-2020-05-13 15:28:08 DEBUG save user User{id=null, firstName='new', lastName='user', password='1234', role='USER', email='rostykzadyraichuk010@gmail.com', bucketId='null'}
+2020-05-13 18:59:27 INFO  filtering request
+2020-05-13 18:59:27 INFO  creating connection to database
+2020-05-13 18:59:27 DEBUG connection was created successfully
+2020-05-13 18:59:27 INFO  creating connection to database
+2020-05-13 18:59:27 DEBUG connection was created successfully
+2020-05-13 18:59:27 INFO  load login.jsp page
+2020-05-13 18:59:29 INFO  filtering request
+2020-05-13 18:59:29 DEBUG find user by email admin@mail
+2020-05-13 18:59:29 INFO  filtering request
+2020-05-13 18:59:29 DEBUG find all products
+2020-05-13 18:59:29 INFO  filtering request
+2020-05-13 18:59:36 INFO  filtering request
+2020-05-13 18:59:36 INFO  add product to bucket
+2020-05-13 19:02:00 INFO  init login filter
+2020-05-13 19:02:00 INFO  init admin filter
+2020-05-13 19:02:07 INFO  creating connection to database
+2020-05-13 19:02:07 DEBUG connection was created successfully
+2020-05-13 19:02:07 INFO  filtering request
+2020-05-13 19:02:07 INFO  creating connection to database
+2020-05-13 19:02:07 DEBUG connection was created successfully
+2020-05-13 19:02:07 INFO  creating connection to database
+2020-05-13 19:02:07 DEBUG connection was created successfully
+2020-05-13 19:02:07 INFO  load login.jsp page
+2020-05-13 19:02:11 INFO  filtering request
+2020-05-13 19:02:11 DEBUG find user by email admin@mail
+2020-05-13 19:02:11 INFO  filtering request
+2020-05-13 19:02:11 DEBUG find all products
+2020-05-13 19:02:11 INFO  filtering request
+2020-05-13 19:02:11 INFO  filtering request
+2020-05-13 19:02:11 INFO  filtering request
+2020-05-13 19:02:12 INFO  filtering request
+2020-05-13 19:02:12 INFO  add product to bucket
+2020-05-13 19:02:48 DEBUG adding product 2 to bucket by id 1
+2020-05-13 19:02:52 INFO  filtering request
+2020-05-13 19:02:52 DEBUG find all products
+2020-05-13 19:02:52 INFO  filtering request

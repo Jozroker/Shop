@@ -2,6 +2,7 @@ package ua.com.lviv.tc.controller;
 
 import org.apache.log4j.Logger;
 import ua.com.lviv.tc.entity.User;
+import ua.com.lviv.tc.service.impl.BucketServiceImpl;
 import ua.com.lviv.tc.service.impl.UserServiceImpl;
 
 import javax.servlet.ServletException;
@@ -19,6 +20,7 @@ public class LoginController extends HttpServlet {
     Logger log = Logger.getLogger(LoginController.class);
 
     UserServiceImpl userService = UserServiceImpl.getInstance();
+    BucketServiceImpl bucketService = BucketServiceImpl.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -42,14 +44,16 @@ public class LoginController extends HttpServlet {
         Optional<User> userOptional = userService.findByEmail(email);
         if (userOptional.isPresent()) {
             User user = userOptional.get();
-            String role = user.getRole();
-            String name = user.getFirstName();
-            Integer bucketId = user.getBucketId();
             if (user.getPassword().equals(password)) {
+                String role = user.getRole();
+                String name = user.getFirstName();
+                Integer bucketId = user.getBucketId();
+//                Integer productsInBucket = bucketService.getProductsInBucket()
                 req.getSession().setAttribute("email", email);
                 req.getSession().setAttribute("role", role);
                 req.getSession().setAttribute("name", name);
                 req.getSession().setAttribute("bucketId", bucketId);
+                req.getSession().setAttribute("productsInBucket", 0);
 //                req.setAttribute("role", role);
                 resp.sendRedirect("product_list");
             } else {

@@ -16,9 +16,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="resources/javascript/productListScript.js"></script>
     <script>
         $(document).ready(function () {
             <%--role = "<%= session.getAttribute("role")%>";--%>
+            sessionStorage.setItem('productsInBucket', ${productsInBucket});
+
             role = "${role}";
             if (role === "ADMIN") {
                 $('.adminTools').show()
@@ -43,8 +46,6 @@
     </script>
     <style type="text/css">
         #nav-bar-droplist{
-            /*position: relative;*/
-            /*left: 60%;*/
             position: absolute;
             right: 10px;
         }
@@ -68,7 +69,7 @@
     </style>
 </head>
 <body>
-
+    <jsp:include page="header.jsp"/>
     <ul class="nav nav-tabs">
         <li class="nav-item">
             <a class="nav-link active" href="/product_list">Products</a>
@@ -88,7 +89,7 @@
                 ${name}
             </a>
             <div id="navbarDropdownMenu" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">View bucket</a>
+                <a class="dropdown-item" href="#">Bucket (${productsInBucket})</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/logout">Log out</a>
             </div>
@@ -105,12 +106,14 @@
                         <h5 class="card-title">${products.name}</h5>
                         <p class="card-text">${products.description}</p>
                         <p id="price" class="card-text">${products.price} $</p>
-                        <img id="basket" class="float-right" width="30px" height="30px" src="/resources/image/basket.png" alt="basket icon"/>
+                        <img id="basket${products.id}" class="float-right" width="30px" height="30px"
+                             src="/resources/image/basket.png" alt="basket icon" onclick="buyNow(${products.id})"/>
+<%--                            ${productsInBucket} = sessionStorage.getItem('productsInBucket')--%>
                     </div>
                 </div>
             </div>
         </c:forEach>
     </div>
-
+    <jsp:include page="footer.jsp"/>
 </body>
 </html>

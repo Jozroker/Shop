@@ -11,6 +11,7 @@ import java.sql.*;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.*;
 
 public class BucketRepositoryImpl implements BucketRepository {
@@ -31,8 +32,11 @@ public class BucketRepositoryImpl implements BucketRepository {
 
     @Override
     public Bucket save(Bucket bucket) {
+        LocalDate date = bucket.getPurchaseDate().toLocalDate();
+        LocalTime time = bucket.getPurchaseDate().toLocalTime();
+        String dateTime = date + " " + time;
         try (PreparedStatement statement = connection.prepareStatement("insert into bucket(purchase_date) value (?)", PreparedStatement.RETURN_GENERATED_KEYS)) {
-            statement.setTimestamp(1, Timestamp.from(Instant.from(bucket.getPurchaseDate())));
+            statement.setTimestamp(1, Timestamp.valueOf(dateTime));
             statement.execute();
             try (ResultSet result = statement.getGeneratedKeys()) {
                 result.next();
@@ -128,7 +132,8 @@ public class BucketRepositoryImpl implements BucketRepository {
         return bucketsId;
     }
 
-    private Map<Integer, Integer> getProductsInBucket(Bucket bucket) {
+    @Override
+    public Map<Integer, Integer> getProductsInBucket(Bucket bucket) {
         Map<Integer, Integer> products = new HashMap<>();
         try (PreparedStatement statement = connection.prepareStatement("select * from bucket_product where bucket_id = ?")) {
             statement.setInt(1, bucket.getId());
@@ -143,5 +148,54 @@ public class BucketRepositoryImpl implements BucketRepository {
             log.error("Error while read products with bucket " + bucket.toString(), e);
         }
         return products;
+    }
+
+    @Override
+    public void addProduct(Integer bucketId, Integer productId) {
+        try (PreparedStatement statement = connection.prepareStatement("insert into bucket_product values (?, ?, 1)")) {
+            statement.setInt(1, bucketId);
+            statement.setInt(2, productId);
+            statement.execute();
+        } catch (SQLException e) {
+            log.error("Error while adding product " + productId + " to bucket by id " + bucketId, e);
+        }
+    }
+
+    @Override
+    public void deleteProduct(Integer bucketId, Integer productId) {
+        try (PreparedStatement statement = connection.prepareStatement("delete from bucket_product where bucket_id = ? and product_id = ?")) {
+            statement.setInt(1, bucketId);
+            statement.setInt(2, productId);
+            statement.execute();
+        } catch (SQLException e) {
+            log.error("Error while deleting product " + productId + " from bucket by id " + bucketId, e);
+        }
+    }
+
+    @Override
+    public void updateProduct(Integer bucketId, Integer productId, Integer count) {
+        try (PreparedStatement statement = connection.prepareStatement("update bucket_product set product_count = ? where bucket_id = ? and product_id = ?")) {
+            statement.setInt(1, count);
+            statement.setInt(2, bucketId);
+            statement.setInt(3, productId);
+            statement.execute();
+        } catch (SQLException e) {
+            log.error("Error while updating product " + productId + " in bucket by id " + bucketId, e);
+        }
+    }
+
+    @Override
+    public Integer getProductsCountInBucket(Integer bucketId) {
+        Integer count = 0;
+        try (PreparedStatement statement = connection.prepareStatement("select count(*) from bucket_product where bucket_id = ?")) {
+            statement.setInt(1, bucketId);
+            try (ResultSet result = statement.executeQuery()) {
+                result.next();
+                count = result.getInt(1);
+            }
+        } catch (SQLException e) {
+            log.error("Error while read products count in bucket by id " + bucketId, e);
+        }
+        return count;
     }
 }

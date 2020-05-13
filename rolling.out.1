@@ -1,39 +1,61 @@
-2020-05-13 15:28:06 DEBUG save user User{id=null, firstName='new', lastName='user', password='1234', role='USER', email='rostykzadyraichuk010@gmail.com', bucketId='null'}
-2020-05-13 15:28:08 INFO  filtering request
-2020-05-13 15:28:08 DEBUG find user by email rostykzadyraichuk010@gmail.com
-2020-05-13 15:28:08 ERROR Error while finding user by email rostykzadyraichuk010@gmail.com
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
-	at com.mysql.cj.jdbc.result.ResultSetImpl.checkRowPos(ResultSetImpl.java:517)
-	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:894)
-	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:916)
-	at ua.com.lviv.tc.repositories.impl.UserRepositoryImpl.findByEmail(UserRepositoryImpl.java:131)
-	at ua.com.lviv.tc.service.impl.UserServiceImpl.findByEmail(UserServiceImpl.java:36)
-	at ua.com.lviv.tc.controller.RegistrationController.doPost(RegistrationController.java:37)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at ua.com.lviv.tc.controller.filter.LoginFilter.doFilter(LoginFilter.java:31)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
+2020-05-13 18:52:25 INFO  filtering request
+2020-05-13 18:52:25 DEBUG find all products
+2020-05-13 18:52:25 INFO  filtering request
+2020-05-13 18:52:27 INFO  filtering request
+2020-05-13 18:52:27 INFO  add product to bucket
+2020-05-13 18:52:27 DEBUG adding product 4 to bucket by id 4
+2020-05-13 18:52:42 INFO  filtering request
+2020-05-13 18:52:42 INFO  exit from all pages to login.jsp page
+2020-05-13 18:52:42 INFO  filtering request
+2020-05-13 18:52:42 INFO  load login.jsp page
+2020-05-13 18:52:44 INFO  filtering request
+2020-05-13 18:52:44 DEBUG find user by email admin@mail
+2020-05-13 18:52:44 INFO  filtering request
+2020-05-13 18:52:44 DEBUG find all products
+2020-05-13 18:52:45 INFO  filtering request
+2020-05-13 18:54:03 INFO  filtering request
+2020-05-13 18:54:17 INFO  filtering request
+2020-05-13 18:54:17 INFO  add product to bucket
+2020-05-13 18:54:17 DEBUG adding product 2 to bucket by id 1
+2020-05-13 18:56:53 INFO  init login filter
+2020-05-13 18:56:53 INFO  init admin filter
+2020-05-13 18:56:56 INFO  creating connection to database
+2020-05-13 18:56:56 DEBUG connection was created successfully
+2020-05-13 18:56:56 INFO  filtering request
+2020-05-13 18:56:56 INFO  creating connection to database
+2020-05-13 18:56:56 DEBUG connection was created successfully
+2020-05-13 18:56:56 INFO  creating connection to database
+2020-05-13 18:56:56 DEBUG connection was created successfully
+2020-05-13 18:56:56 INFO  load login.jsp page
+2020-05-13 18:57:01 INFO  filtering request
+2020-05-13 18:57:01 DEBUG find user by email admin@mail
+2020-05-13 18:57:01 INFO  filtering request
+2020-05-13 18:57:01 DEBUG find all products
+2020-05-13 18:57:01 INFO  filtering request
+2020-05-13 18:57:02 INFO  filtering request
+2020-05-13 18:57:02 INFO  add product to bucket
+2020-05-13 18:57:02 DEBUG adding product 1 to bucket by id 1
+2020-05-13 18:58:26 INFO  init login filter
+2020-05-13 18:58:26 INFO  init admin filter
+2020-05-13 18:58:30 INFO  creating connection to database
+2020-05-13 18:58:30 DEBUG connection was created successfully
+2020-05-13 18:58:30 INFO  filtering request
+2020-05-13 18:58:30 INFO  creating connection to database
+2020-05-13 18:58:30 DEBUG connection was created successfully
+2020-05-13 18:58:30 INFO  creating connection to database
+2020-05-13 18:58:30 DEBUG connection was created successfully
+2020-05-13 18:58:30 INFO  load login.jsp page
+2020-05-13 18:58:32 INFO  filtering request
+2020-05-13 18:58:32 DEBUG find user by email admin@mail
+2020-05-13 18:58:32 INFO  filtering request
+2020-05-13 18:58:32 DEBUG find all products
+2020-05-13 18:58:32 INFO  filtering request
+2020-05-13 18:58:35 INFO  filtering request
+2020-05-13 18:58:35 INFO  add product to bucket
+2020-05-13 18:58:35 DEBUG adding product 2 to bucket by id 1
+2020-05-13 18:58:38 INFO  filtering request
+2020-05-13 18:58:38 DEBUG find all products
+2020-05-13 18:59:25 INFO  init login filter
+2020-05-13 18:59:25 INFO  init admin filter
+2020-05-13 18:59:26 INFO  creating connection to database
+2020-05-13 18:59:27 DEBUG connection was created successfully

@@ -22,6 +22,10 @@ public class LogOutController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         session.removeAttribute("email");
+        session.removeAttribute("role");
+        session.removeAttribute("name");
+        session.removeAttribute("bucketId");
+        session.removeAttribute("products");
         resp.sendRedirect("login");
 //        req.getRequestDispatcher("loginO.jsp").forward(req, resp);
         log.info("exit from all pages to login.jsp page");

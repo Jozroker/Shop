@@ -48,6 +48,7 @@ public class RegistrationController extends HttpServlet {
                 User user = new User(firstName, lastName, password, "USER", email);
                 userService.save(user);
                 log.debug("save user " + user);
+                resp.sendRedirect("login");
             }
         }
 

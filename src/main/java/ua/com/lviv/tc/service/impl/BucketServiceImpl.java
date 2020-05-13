@@ -7,15 +7,22 @@ import ua.com.lviv.tc.repositories.impl.BucketRepositoryImpl;
 import ua.com.lviv.tc.service.BucketService;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 public class BucketServiceImpl implements BucketService {
 
-    BucketRepository bucketRepository;
+    private BucketRepository bucketRepository = BucketRepositoryImpl.getInstance();
     Logger log = Logger.getLogger(BucketServiceImpl.class);
+    private static BucketServiceImpl instance;
 
-    public BucketServiceImpl() {
-        this.bucketRepository = BucketRepositoryImpl.getInstance();
+    private BucketServiceImpl() {}
+
+    public static BucketServiceImpl getInstance() {
+        if (instance == null) {
+            instance = new BucketServiceImpl();
+        }
+        return instance;
     }
 
     @Override
@@ -46,5 +53,35 @@ public class BucketServiceImpl implements BucketService {
     public void deleteById(Integer id) {
         log.debug("deleting bucket by id " + id);
         bucketRepository.deleteById(id);
+    }
+
+    @Override
+    public Map<Integer, Integer> getProductsInBucket(Bucket bucket) {
+        log.debug("getting products from bucket " + bucket);
+        return bucketRepository.getProductsInBucket(bucket);
+    }
+
+    @Override
+    public void addProduct(Integer bucketId, Integer productId) {
+        log.debug("adding product " + productId + " to bucket by id " + bucketId);
+        bucketRepository.addProduct(bucketId, productId);
+    }
+
+    @Override
+    public void deleteProduct(Integer bucketId, Integer productId) {
+        log.debug("deleting product " + productId + " from bucket by id " + bucketId);
+        bucketRepository.deleteProduct(bucketId, productId);
+    }
+
+    @Override
+    public void updateProduct(Integer bucketId, Integer productId, Integer count) {
+        log.debug("updating product " + productId + " in bucket by id " + bucketId);
+        bucketRepository.updateProduct(bucketId, productId, count);
+    }
+
+    @Override
+    public Integer getProductsCountInBucket(Integer bucketId) {
+        log.debug("getting products count from bucket by id " + bucketId);
+        return bucketRepository.getProductsCountInBucket(bucketId);
     }
 }
