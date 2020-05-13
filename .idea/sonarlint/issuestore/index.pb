@@ -39,8 +39,6 @@ I
 src/main/webapp/login.jsp,8\5\85ee523d01e5e19376db640e846c91bbcb0a1c22
 P
  src/main/webapp/registration.jsp,d\d\dd51f7041d5a8d7bb17c79a85099a350e198ae09
-I
-src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
 k
 ;src/main/java/ua/com/lviv/tc/controller/MenuController.java,c\2\c25694e99321b29dd981471765f5e841beef14ca
 K
@@ -51,8 +49,6 @@ m
 =src/main/java/ua/com/lviv/tc/controller/LogOutController.java,e\5\e537a14788465a379cbe56661b21eeb4c61828aa
 o
 ?src/main/java/ua/com/lviv/tc/controller/filter/LoginFilter.java,e\1\e111bac255aaa31737967e4a9a82a594aa692ec1
-I
-src/main/webapp/admin.jsp,1\6\16c841072742f24edfb63d62f4da7ea207d6a9cd
 o
 ?src/main/java/ua/com/lviv/tc/controller/filter/AdminFilter.java,c\d\cdf9c4aecae5e2097d1c38b0749c16c01efe7f0b
 S
@@ -97,3 +93,13 @@ q
 Asrc/main/java/ua/com/lviv/tc/service/impl/ProductServiceImpl.java,2\a\2a841e5e49b3af24fbbec34c0d3d1776678a8ede
 P
  src/main/webapp/product-list.jsp,e\8\e87541f21ac8f3e576627f6951b549ad38d7ecc9
+J
+src/main/webapp/footer.jsp,3\8\3819c16e4a27752a128752c506287183b0c69775
+J
+src/main/webapp/header.jsp,0\5\051b0ac501a865704d2b6b36f8cfabfa311becc2
+8
+shop.sql,a\3\a37305f493d206ffa622986874aec5de26f67520
+r
+Bsrc/main/java/ua/com/lviv/tc/controller/AddToBucketController.java,5\3\53ded7124f755ff5a95a9f273e5136bf267b4f69
+i
+9src/main/webapp/resources/javascript/productListScript.js,4\a\4a6e77f53aa8842775bde16e662071567606ea17

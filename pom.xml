@@ -11,7 +11,12 @@
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <jackson.version>2.2.3</jackson.version>
+        <jackson.version>2.9.10.1</jackson.version>
+        <tomcat7.varsion>2.2</tomcat7.varsion>
+        <mysql.connector.version>8.0.13</mysql.connector.version>
+        <log4j.varsion>1.2.17</log4j.varsion>
+        <javax.servlet-api.varsion>3.1.0</javax.servlet-api.varsion>
+        <jstl.version>1.2</jstl.version>
     </properties>
     <build>
 <!--        <resources>-->
@@ -25,14 +30,14 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
+                <version>${tomcat7.varsion}</version>
                 <configuration>
                     <path>/</path>
                 </configuration>
@@ -44,19 +49,19 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.13</version>
+            <version>${mysql.connector.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/log4j/log4j -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
+            <version>${log4j.varsion}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
+            <version>${javax.servlet-api.varsion}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -73,7 +78,7 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
-            <version>1.2</version>
+            <version>${jstl.version}</version>
         </dependency>
 
     </dependencies>

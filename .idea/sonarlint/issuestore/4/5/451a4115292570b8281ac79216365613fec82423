@@ -1,7 +1,5 @@
 
 e
-java:S3252""HUse static access with "java.sql.Statement" for "RETURN_GENERATED_KEYS".(¬›øÚ8»Í‰š .
-[
-java:S1144‰"8Remove this unused private "getProductsInBucket" method.(Ô¼¤¹şÿÿÿÿ8µ—ï™ .
-]
-java:S2789p"@Methods with an "Optional" return type should never return null.(¥¹ï8Šöó™ .
+java:S3252&"HUse static access with "java.sql.Statement" for "RETURN_GENERATED_KEYS".(¬›øÚ8³êòï .
+P
+java:S1128"3Remove this unused import 'org.omg.CORBA.INTERNAL'.(¦‰­Ú8¶‚Æï .
