@@ -25,7 +25,7 @@ public class LoginController extends HttpServlet {
         HttpSession session = req.getSession();
         boolean isUserLoggedIn = (session != null && session.getAttribute("email") != null);
         if (isUserLoggedIn) {
-            resp.sendRedirect("menu");
+            resp.sendRedirect("product_list");
             log.info("user is logged in");
             log.info("redirect to menu page");
         } else {
@@ -43,9 +43,13 @@ public class LoginController extends HttpServlet {
         if (userOptional.isPresent()) {
             User user = userOptional.get();
             String role = user.getRole();
+            String name = user.getFirstName();
+            Integer bucketId = user.getBucketId();
             if (user.getPassword().equals(password)) {
                 req.getSession().setAttribute("email", email);
                 req.getSession().setAttribute("role", role);
+                req.getSession().setAttribute("name", name);
+                req.getSession().setAttribute("bucketId", bucketId);
 //                req.setAttribute("role", role);
                 resp.sendRedirect("product_list");
             } else {

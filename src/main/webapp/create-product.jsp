@@ -8,15 +8,23 @@
     <script src="/resources/javascript/createProductScript.js"></script>
     <style type="text/css">
         .registrationFormDiv {
-            margin-left: 40%;
+            margin-left: 30%;
             margin-top: 5%;
-        }
-        .form-control {
-            width: 30%;
+            width: 40%;
         }
         .btn {
-            width: 30%;
+            position: absolute;
+            left: 40%;
+            width: 20%;
             text-align: center;
+            /*margin: auto;*/
+
+        }
+        h3 {
+            text-align: center;
+        }
+        #name, #price {
+            width: 50%;
         }
         #create {
             margin-top: 0;
@@ -25,7 +33,7 @@
 </head>
 <body>
 
-    <form id="create_product" action="/admin/create_products" method="post">
+    <form id="create_product" action="/admin/create_products" method="post"></form>
     <div class="registrationFormDiv">
         <h3>Create new product</h3>
         <div class="form-group">
@@ -33,17 +41,17 @@
             <input type="text" class="form-control" id="name" name="name">
         </div>
         <div class="form-group">
-            <label id="descriptionLabel" for="description">Description</label>
-            <input type="text" class="form-control" id="description" name="description">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" rows="3" name="description"></textarea>
         </div>
         <div class="form-group">
             <label id="priceLabel" for="price">Price</label>
             <input type="text" class="form-control" id="price" name="price">
         </div>
-        <button class="btn btn-primary" id="create" class="btn">Create</button>
+
 
     </div>
-    </form>
+    <button form="create_product" class="btn btn-primary" id="create" class="btn">Create</button>
 
 </body>
 </html>

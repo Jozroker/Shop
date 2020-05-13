@@ -1,6 +1,7 @@
 package ua.com.lviv.tc.repositories.impl;
 
 import org.apache.log4j.Logger;
+import org.omg.CORBA.INTERNAL;
 import ua.com.lviv.tc.config.ConnectionManager;
 import ua.com.lviv.tc.entity.Bucket;
 import ua.com.lviv.tc.entity.User;
@@ -9,9 +10,8 @@ import ua.com.lviv.tc.repositories.BucketRepository;
 import java.sql.*;
 import java.time.Instant;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.time.LocalDateTime;
+import java.util.*;
 
 public class BucketRepositoryImpl implements BucketRepository {
 
@@ -89,27 +89,21 @@ public class BucketRepositoryImpl implements BucketRepository {
 
     @Override
     public Optional<Bucket> findById(Integer id) {
-//        Bucket bucket = null;
-//        try (PreparedStatement statement = connection.prepareStatement("select * from bucket where id = ?")) {
-//            statement.setInt(1, id);
-//            List<Integer> products = new ArrayList<>();
-//            int bucketId = 0;
-//            int userId = 0;
-//            LocalDate date = null;
-//            try (ResultSet result = statement.executeQuery()) {
-//                while(result.next()) {
-//                    bucketId = result.getInt("id");
-//                    userId = result.getInt("user_id");
-//                    date = result.getDate("purchase_date").toLocalDate();
-//                    products.add(result.getInt("product_id"));
-//                }
-//            }
-//            bucket = new Bucket(bucketId, userId, products, date);
-//        } catch (SQLException e) {
-//            log.error("Error while finding bucket by id " + id, e);
-//        }
-//        return Optional.ofNullable(bucket);
-        return null;
+        Bucket bucket = null;
+        try (PreparedStatement statement = connection.prepareStatement("select * from bucket where id = ?")) {
+            statement.setInt(1, id);
+            int bucketId = 0;
+            LocalDateTime date = null;
+            try (ResultSet result = statement.executeQuery()) {
+                result.next();
+                bucketId = result.getInt("id");
+                date = result.getTimestamp("purchase_date").toLocalDateTime();
+            }
+            bucket = new Bucket(bucketId, date);
+        } catch (SQLException e) {
+            log.error("Error while finding bucket by id " + id, e);
+        }
+        return Optional.ofNullable(bucket);
     }
 
     @Override
@@ -134,13 +128,15 @@ public class BucketRepositoryImpl implements BucketRepository {
         return bucketsId;
     }
 
-    private List<Integer> getProductsInBucket(Bucket bucket) {
-        List<Integer> products = new ArrayList<>();
-        try (PreparedStatement statement = connection.prepareStatement("select product_id from bucket where id = ?")) {
+    private Map<Integer, Integer> getProductsInBucket(Bucket bucket) {
+        Map<Integer, Integer> products = new HashMap<>();
+        try (PreparedStatement statement = connection.prepareStatement("select * from bucket_product where bucket_id = ?")) {
             statement.setInt(1, bucket.getId());
             try (ResultSet result = statement.executeQuery()) {
                 while(result.next()) {
-                    products.add(result.getInt("id"));
+                    int productId = result.getInt("product_id");
+                    int productCount = result.getInt("product_count");
+                    products.put(productId, productCount);
                 }
             }
         } catch (SQLException e) {

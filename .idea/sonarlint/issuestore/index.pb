@@ -53,8 +53,6 @@ o
 ?src/main/java/ua/com/lviv/tc/controller/filter/LoginFilter.java,e\1\e111bac255aaa31737967e4a9a82a594aa692ec1
 I
 src/main/webapp/admin.jsp,1\6\16c841072742f24edfb63d62f4da7ea207d6a9cd
-l
-<src/main/java/ua/com/lviv/tc/controller/AdminController.java,d\b\db89a974287b539189e6f16bc6d4bcb8b60bc7dd
 o
 ?src/main/java/ua/com/lviv/tc/controller/filter/AdminFilter.java,c\d\cdf9c4aecae5e2097d1c38b0749c16c01efe7f0b
 S
@@ -63,8 +61,6 @@ g
 7src/main/java/ua/com/lviv/tc/service/BucketService.java,1\1\11fee5f3ef7bb8d0aff874db92988bcefef9114d
 h
 8src/main/java/ua/com/lviv/tc/service/ProductService.java,3\7\3777f9201718bd89d93c081e3e5f9ccfa1ff055a
-M
-src/main/webapp/not-admin.jsp,0\c\0c77cf9e3e7902f9078e9477c09f41269f54b501
 O
 target/classes/log4j.properties,f\9\f999cf84ddbf4408702ce6efea49a8266db5d1e8
 ‚

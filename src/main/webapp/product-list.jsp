@@ -18,12 +18,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            role = "<%= session.getAttribute("role")%>"
+            <%--role = "<%= session.getAttribute("role")%>";--%>
+            role = "${role}";
             if (role === "ADMIN") {
                 $('.adminTools').show()
             } else {
                 $('.adminTools').hide()
             }
+
+            // $('#navbarDropdown').on('focus', function () {
+            //     $('#test').show();
+            // })
+            // $('#navbarDropdown').hover(function () {
+            //     if ($('#test').is(':visible')) {
+            //         alert('1')
+            //     } else {
+            //         $('#test').change(function () {
+            //             this.style.display = "block"
+            //         }).trigger('change');
+            //         $('#test').show()
+            //     }
+            // })
         });
     </script>
     <style type="text/css">
@@ -33,55 +48,69 @@
             position: absolute;
             right: 10px;
         }
+
+        .dropdown:hover #navbarDropdownMenu {
+            display: block;
+        }
+
+        #card-deck {
+            margin: 20px;
+        }
+
+        #price {
+            display: inline;
+        }
+
+        /*.card {*/
+        /*    margin: 5px;*/
+        /*}*/
+
     </style>
 </head>
 <body>
 
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" href="#">Products</a>
+            <a class="nav-link active" href="/product_list">Products</a>
+        </li>
+<%--        <li class="nav-item">--%>
+<%--            <a class="nav-link" href="#">Products</a>--%>
+<%--        </li>--%>
+        <li class="nav-item">
+            <a class="nav-link adminTools" href="/admin/create_products">Create product</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link adminTools" href="#">Create product</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link adminTools" href="#">Update product</a>
+            <a class="nav-link adminTools" href="/admin/update_product">Update product</a>
         </li>
         <div id="nav-bar-droplist">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+            <a class="nav-link dropdown-toggle" href="/personal_cabinet" id="navbarDropdown" role="button">
+                ${name}
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+            <div id="navbarDropdownMenu" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">View bucket</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="/logout">Log out</a>
             </div>
         </li>
         </div>
     </ul>
 
-        <table>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Count</th>
-            <c:forEach items="${products}" var="products">
-                <tr>
-                    <td>${products.id}</td>
-                    <td>${products.name}</td>
-                    <td>${products.description}</td>
-                    <td>${products.price}</td>
-                    <td>${products.count}</td>
-                </tr>
-            </c:forEach>
-        </table>
-
+    <div id="card-deck" class="row">
+        <c:forEach items="${products}" var="products">
+            <div class="col-sm-3">
+                <div class="card mb-3">
+                    <img src="/resources/image/no-image.png" class="card-img-top" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title">${products.name}</h5>
+                        <p class="card-text">${products.description}</p>
+                        <p id="price" class="card-text">${products.price} $</p>
+                        <img id="basket" class="float-right" width="30px" height="30px" src="/resources/image/basket.png" alt="basket icon"/>
+                    </div>
+                </div>
+            </div>
+        </c:forEach>
+    </div>
 
 </body>
 </html>
