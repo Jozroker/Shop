@@ -20,7 +20,7 @@
     <script>
         $(document).ready(function () {
             <%--role = "<%= session.getAttribute("role")%>";--%>
-            sessionStorage.setItem('productsInBucket', ${productsInBucket});
+            <%--sessionStorage.setItem('productsInBucket', ${productsInBucket});--%>
 
             role = "${role}";
             if (role === "ADMIN") {
@@ -89,7 +89,7 @@
                 ${name}
             </a>
             <div id="navbarDropdownMenu" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Bucket (${productsInBucket})</a>
+                <a id="bucket-count" class="dropdown-item" href="#">Bucket (${productsInBucket})</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/logout">Log out</a>
             </div>
@@ -107,7 +107,7 @@
                         <p class="card-text">${products.description}</p>
                         <p id="price" class="card-text">${products.price} $</p>
                         <img id="basket${products.id}" class="float-right" width="30px" height="30px"
-                             src="/resources/image/basket.png" alt="basket icon" onclick="buyNow(${products.id})"/>
+                             src="/resources/image/basket.png" alt="basket icon" onclick="buyNow(${products.id}, ${productsInBucket})"/>
 <%--                            ${productsInBucket} = sessionStorage.getItem('productsInBucket')--%>
                     </div>
                 </div>

@@ -101,5 +101,5 @@ J
 shop.sql,a\3\a37305f493d206ffa622986874aec5de26f67520
 r
 Bsrc/main/java/ua/com/lviv/tc/controller/AddToBucketController.java,5\3\53ded7124f755ff5a95a9f273e5136bf267b4f69
-i
-9src/main/webapp/resources/javascript/productListScript.js,4\a\4a6e77f53aa8842775bde16e662071567606ea17
+V
+&src/main/java/ua/com/lviv/tc/Main.java,0\c\0cc8c44f83c313860885a0f37edf699a63cbd3d1

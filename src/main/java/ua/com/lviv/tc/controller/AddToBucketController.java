@@ -26,12 +26,15 @@ public class AddToBucketController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         log.info("add product to bucket");
         Integer bucketId = (Integer)req.getSession().getAttribute("bucketId");
-        Integer count = (Integer) req.getSession().getAttribute("productsInBucket");
-        String newCount = String.valueOf(++count);
-        req.getSession().setAttribute("productsInBucket", newCount);
+//        Integer count = (Integer) req.getSession().getAttribute("productsInBucket");
+//        String newCount = String.valueOf(++count);
+//        req.getSession().setAttribute("productsInBucket", newCount);
         String requestBody = req.getReader().lines().collect(Collectors.joining());
         AddProductDTO addProductDTO = new ObjectMapper().readValue(requestBody, AddProductDTO.class);
         bucketService.addProduct(bucketId, addProductDTO.getId());
+//
+        Integer count = bucketService.getProductsCountInBucket(bucketId);
+        req.getSession().setAttribute("productsInBucket", count);
     }
 
     private static class AddProductDTO{
