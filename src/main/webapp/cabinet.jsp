@@ -34,6 +34,18 @@
         .dropdown:hover #navbarDropdownMenu {
             display: block;
         }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        img {
+            float: left;
+            border-radius: 50%;
+            -webkit-shape-outside:circle();
+            shape-outside:circle();
+            margin-right: 20px;
+        }
     </style>
 </head>
 <body>
@@ -42,9 +54,6 @@
         <li class="nav-item">
             <a class="nav-link" href="/product_list">Products</a>
         </li>
-        <%--        <li class="nav-item">--%>
-        <%--            <a class="nav-link" href="#">Products</a>--%>
-        <%--        </li>--%>
         <li class="nav-item">
             <a class="nav-link adminTools" href="/admin/create_products">Create product</a>
         </li>
@@ -65,12 +74,17 @@
         </div>
     </ul>
 
-    <p>First name: ${fname}</p><br>
-    <p>Last name: ${lname}</p><br>
-    <p>Email: ${email}</p><br>
-    <form action="/product_list" method="get">
-        <input type="submit" value="Menu">
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="rounded-circle " width="200px" alt="avatar image" src="/resources/image/default-avatar.png"
+                     data-holder-rendered="true">
+                <p>First name: ${fname}</p>
+                <p>Last name: ${lname}</p>
+                <p>Email: ${email}</p>
+            </div>
+        </div>
+    </div>
 <jsp:include page="footer.jsp"/>
 </body>
 </html>

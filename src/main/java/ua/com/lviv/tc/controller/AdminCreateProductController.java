@@ -41,10 +41,9 @@ public class AdminCreateProductController extends HttpServlet {
             resp.sendRedirect("create_products");
             log.error("fields of create product is empty");
         } else {
-            BigDecimal price;
-            if (validatePrice(priceString)) {
+            if (validatePrice(priceString) && validateCount(countString)) {
                 Integer count = Integer.parseInt(countString);
-                price = new BigDecimal(priceString);
+                BigDecimal price = new BigDecimal(priceString);
                 Product product = new Product(name, description, price, count);
                 productService.save(product);
                 resp.sendRedirect("/product_list");
@@ -60,6 +59,15 @@ public class AdminCreateProductController extends HttpServlet {
     private boolean validatePrice(String priceString) {
         try {
             Double.parseDouble(priceString);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    private boolean validateCount(String countString) {
+        try {
+            Integer.parseInt(countString);
             return true;
         } catch (Exception e) {
             return false;

@@ -105,3 +105,11 @@ V
 &src/main/java/ua/com/lviv/tc/Main.java,0\c\0cc8c44f83c313860885a0f37edf699a63cbd3d1
 8
 shop.iml,9\3\936868cfff4d9e575a4505de73ec781074270942
+m
+=src/main/java/ua/com/lviv/tc/controller/BucketController.java,d\e\decd97af36c29f8e7104908d248c223c73f2d56c
+l
+<src/main/java/ua/com/lviv/tc/controller/CountController.java,f\3\f3eb14e03729a80aec6ecf0dc0839e589c1ff358
+w
+Gsrc/main/java/ua/com/lviv/tc/controller/RemoveFromBucketController.java,3\a\3acd18839742e90aca35ee5abbb280c34c53ee6e
+J
+src/main/webapp/bucket.jsp,f\9\f91ddf8a6b0950216b5c45c5c8e1ecfb1e364bb2

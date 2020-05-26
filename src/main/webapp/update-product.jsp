@@ -14,36 +14,42 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<%--    <script>--%>
-<%--        $(document).ready(function () {--%>
-<%--            $("#btn").click(function () {--%>
-<%--                let fname = $("#fname").val();--%>
-<%--                let lname = $("#lname").val();--%>
-<%--                let email = $("#email").val();--%>
-<%--                let pass = $("#password").val();--%>
-<%--                if (fname === "" || lname === "" || email === "" || pass === "") {--%>
-<%--                    alert("Empty fields");--%>
-<%--                }--%>
-<%--            })--%>
-<%--        })--%>
-<%--    </script>--%>
-<%--    <style type="text/css">--%>
-<%--        .registrationFormDiv {--%>
-<%--            margin-left: 40%;--%>
-<%--            margin-top: 5%;--%>
-<%--        }--%>
-<%--        .form-control {--%>
-<%--            width: 30%;--%>
-<%--        }--%>
-<%--        .btn {--%>
-<%--            width: 30%;--%>
-<%--            text-align: center;--%>
-<%--        }--%>
-<%--        #logInButton {--%>
-<%--            margin-top: 0;--%>
-<%--        }--%>
-<%--    </style>--%>
+    <script src="/resources/javascript/updateProductScript.js"></script>
     <style type="text/css">
+        #nav-bar-droplist{
+            position: absolute;
+            right: 10px;
+        }
+
+        .dropdown:hover #navbarDropdownMenu {
+            display: block;
+        }
+
+        .registrationFormDiv {
+            margin-left: 30%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            width: 40%;
+        }
+
+        .btn {
+            position: absolute;
+            left: 40%;
+            width: 20%;
+            text-align: center;
+            /*margin: auto;*/
+
+        }
+        h3 {
+            text-align: center;
+        }
+        #id, #name, #price, #count {
+            width: 50%;
+        }
+        #create {
+            margin-top: 0;
+        }
+
         #nav-bar-droplist{
             position: absolute;
             right: 10px;
@@ -83,34 +89,33 @@
         </div>
     </ul>
 
-    <form id="update" action="/admin/update_product" method="post">
+    <form id="update_product" action="/admin/update_product" method="post"></form>
     <div class="registrationFormDiv">
         <h3>Update product</h3>
         <div class="form-group">
             <label for="id">Id</label>
-            <input type="text" class="form-control" id="id" name="id">
+            <input form="update_product" type="text" class="form-control" id="id" name="id">
         </div>
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" name="name">
+            <input form="update_product" type="text" class="form-control" id="name" name="name">
         </div>
         <div class="form-group">
             <label for="description">Description</label>
-            <input type="text" class="form-control" id="description" name="description">
+            <textarea form="update_product" class="form-control" id="description" rows="3" name="description"></textarea>
         </div>
         <div class="form-group">
             <label for="price">Price</label>
-            <input type="text" class="form-control" id="price" name="price">
+            <input form="update_product" type="text" class="form-control" id="price" name="price">
+        </div>
+        <div class="form-group">
+            <label id="countLabel" for="count">Count</label>
+            <input form="update_product" type="text" class="form-control" id="count" name="count">
         </div>
 
-        <button type="submit" class="btn btn-primary" id="create" class="btn">Update</button>
+        <button form="update_product" class="btn btn-primary" id="update" class="btn">Update</button>
     </div>
-    </form>
-    <form action="/login" method="get">
-        <div id="logInButton" class="registrationFormDiv">
-            <button type="submit" class="btn btn-primary" class="btn">Log in</button>
-        </div>
-    </form>
+
     <jsp:include page="footer.jsp"/>
 </body>
 </html>

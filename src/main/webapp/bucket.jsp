@@ -29,6 +29,21 @@
                 $('.adminTools').hide()
             }
 
+            if ($('#empty').show()) {
+                $('#empty').change(function () {
+                    this.style.textAlign = 'center';
+                }).trigger('change');
+                $('.mb-3').change(function () {
+                    this.style.maxWidth = '100%';
+                }).trigger('change');
+                // $('#empty').style.textAlign = 'center';
+                // $('.mb-3').style.width = '100%';
+            }
+
+            // $('#test').change(function () {
+                //             this.style.display = "block"
+                //         }).trigger('change');
+
             // $('#navbarDropdown').on('focus', function () {
             //     $('#test').show();
             // })
@@ -54,12 +69,9 @@
             display: block;
         }
 
-        #card-deck {
-            margin: 20px;
-        }
-
-        #price {
-            display: inline;
+        #close {
+            position: absolute;
+            right: 10px;
         }
 
         .mb-3 .row {
@@ -121,9 +133,12 @@
 <%--        </c:forEach>--%>
 <%--    </div>--%>
         <div class="card mb-3" style="max-width: 90%;">
+            <c:if test="${empty products}">
+                <h2 id="empty">Bucket is empty</h2>
+            </c:if>
             <c:forEach items="${products}" var="entry">
                 <div class="row no-gutters">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <img src="/resources/image/no-image.png" class="card-img" alt="product image">
                     </div>
                     <div class="col-md-8">
@@ -132,12 +147,15 @@
                             <p class="card-text">${entry.key.description}</p>
                             <p class="card-text"><small class="text-muted">Price: ${entry.key.price}</small></p>
                             <p class="card-text"><small class="text-muted">Count:
-                                <button id="minus" type="button" class="btn btn-primary" onclick="subtract(${bucketId}, ${entry.key.id}, ${entry.value})">-</button>
-                                <span id="count">${entry.value}</span>
-                                <button id="plus" type="button" class="btn btn-primary" onclick="add(${bucketId}, ${entry.key.id}, ${entry.value})">+</button>
+                                <button id="minus" type="button" class="btn btn-primary" onclick="subtract(${bucketId}, ${entry.key.id})">-</button>
+                                <span id="count${entry.key.id}">${entry.value}</span>
+                                <button id="plus" type="button" class="btn btn-primary" onclick="add(${bucketId}, ${entry.key.id})">+</button>
                             </small></p>
                         </div>
                     </div>
+                    <button type="button" id="close" class="close" aria-label="Close" onclick="remove(${bucketId}, ${entry.key.id})">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
             </c:forEach>
         </div>

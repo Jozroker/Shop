@@ -81,7 +81,7 @@
             <a class="nav-link adminTools" href="/admin/create_products">Create product</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link adminTools" href="/admin/update_product">Update product</a>
+            <a class="nav-link adminTools" href="admin/update_product">Update product</a>
         </li>
         <div id="nav-bar-droplist">
         <li class="nav-item dropdown">

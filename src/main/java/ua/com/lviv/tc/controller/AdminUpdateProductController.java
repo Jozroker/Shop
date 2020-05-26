@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.Optional;
 
 @WebServlet("/admin/update_product")
 public class AdminUpdateProductController extends HttpServlet {
@@ -26,8 +27,8 @@ public class AdminUpdateProductController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        log.debug("request to get create product page");
-        req.getRequestDispatcher("create-update.jsp").forward(req, resp);
+        log.debug("request to get update product page");
+        req.getRequestDispatcher("/update-product.jsp").forward(req, resp);
     }
 
     @Override
@@ -38,19 +39,40 @@ public class AdminUpdateProductController extends HttpServlet {
         if (validateId(idString)) {
             id = Integer.parseInt(idString);
         }
-        String name = req.getParameter("name");
-        String description = req.getParameter("description");
-        String priceString = req.getParameter("price");
-        String countString = req.getParameter("count");
-        BigDecimal price = new BigDecimal(0);
-        if (validatePrice(priceString)) {
-            price = new BigDecimal(priceString);
+        Optional<Product> oldProductOptional = productService.findById(id);
+        if (oldProductOptional.isPresent()) {
+            Product oldProduct = oldProductOptional.get();
+            String name = req.getParameter("name");
+            String description = req.getParameter("description");
+            String priceString = req.getParameter("price");
+            String countString = req.getParameter("count");
+            BigDecimal price = new BigDecimal(0);
+            Integer count = 0;
+            if (validatePrice(priceString) && validateCount(countString)) {
+                price = new BigDecimal(priceString);
+                count = Integer.parseInt(countString);
+            }
+            if (name.equals("")) {
+                name = oldProduct.getName();
+            }
+            if (description.equals("")) {
+                description = oldProduct.getDescription();
+            }
+            if (priceString.equals("")) {
+                price = oldProduct.getPrice();
+            }
+            if (countString.equals("")) {
+                count = oldProduct.getCount();
+            }
+            Product product = new Product(id, name, description, price, count);
+            productService.update(product);
+            resp.sendRedirect("/product_list");
+            log.debug("product " + product + " is updated successfully");
+        } else {
+            resp.sendRedirect("/update_product");
+            log.error("product by id " + id + " not exists");
         }
-        Integer count = Integer.parseInt(countString);
-        Product product = new Product(id, name, description, price, count);
-        productService.update(product);
-        resp.sendRedirect("product-list");
-        log.debug("product " + product + " is updated successfully");
+
     }
 
     private boolean validatePrice(String priceString) {
@@ -65,6 +87,15 @@ public class AdminUpdateProductController extends HttpServlet {
     private boolean validateId(String idString) {
         try {
             Integer.parseInt(idString);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    private boolean validateCount(String countString) {
+        try {
+            Integer.parseInt(countString);
             return true;
         } catch (Exception e) {
             return false;

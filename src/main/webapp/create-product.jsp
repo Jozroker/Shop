@@ -8,10 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/resources/javascript/createProductScript.js"></script>
     <style type="text/css">
         .registrationFormDiv {
             margin-left: 30%;
             margin-top: 5%;
+            margin-bottom: 5%;
             width: 40%;
         }
         .btn {
@@ -25,7 +27,7 @@
         h3 {
             text-align: center;
         }
-        #name, #price {
+        #name, #price, #count {
             width: 50%;
         }
         #create {
@@ -76,20 +78,23 @@
         <h3>Create new product</h3>
         <div class="form-group">
             <label id="nameLabel" for="name">Name</label>
-            <input type="text" class="form-control" id="name" name="name">
+            <input form="create_product" type="text" class="form-control" id="name" name="name">
         </div>
         <div class="form-group">
             <label for="description">Description</label>
-            <textarea class="form-control" id="description" rows="3" name="description"></textarea>
+            <textarea form="create_product" class="form-control" id="description" rows="3" name="description"></textarea>
         </div>
         <div class="form-group">
             <label id="priceLabel" for="price">Price</label>
-            <input type="text" class="form-control" id="price" name="price">
+            <input form="create_product" type="text" class="form-control" id="price" name="price">
         </div>
-
-
+        <div class="form-group">
+            <label id="countLabel" for="count">Count</label>
+            <input form="create_product" type="text" class="form-control" id="count" name="count">
+        </div>
+        <button form="create_product" class="btn btn-primary" id="create" class="btn">Create</button>
     </div>
-    <button form="create_product" class="btn btn-primary" id="create" class="btn">Create</button>
+
 <jsp:include page="footer.jsp"/>
 </body>
 </html>

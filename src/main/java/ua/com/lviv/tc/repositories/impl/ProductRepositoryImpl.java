@@ -48,11 +48,12 @@ public class ProductRepositoryImpl implements ProductRepository {
 
     @Override
     public void update(Product product) {
-        try (PreparedStatement statement = connection.prepareStatement("update product set name = ?, descroption = ?, price = ? where id = ?")) {
+        try (PreparedStatement statement = connection.prepareStatement("update product set name = ?, description = ?, price = ?, count = ? where id = ?")) {
             statement.setString(1, product.getName());
             statement.setString(2, product.getDescription());
             statement.setBigDecimal(3, product.getPrice());
-            statement.setInt(4, product.getId());
+            statement.setInt(4, product.getCount());
+            statement.setInt(5, product.getId());
             statement.execute();
         } catch (SQLException e) {
             log.error("Error while updating product " + product.toString(), e);

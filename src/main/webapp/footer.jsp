@@ -13,10 +13,18 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+<style>
+    #footer {
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        max-width: 100%;
+    }
+</style>
 
 <div class="navbar-fixed-bottom row-fluid">
     <div class="navbar-inner">
-        <div class="container">
+        <div id="footer" class="container">
             Technology shop by Loft Enterprises
             Something information about this shop.
         </div>
