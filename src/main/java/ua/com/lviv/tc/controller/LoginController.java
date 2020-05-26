@@ -55,6 +55,7 @@ public class LoginController extends HttpServlet {
                 req.getSession().setAttribute("bucketId", bucketId);
                 req.getSession().setAttribute("productsInBucket", 0);
 //                req.setAttribute("role", role);
+//                resp.sendRedirect("count?name=First");
                 resp.sendRedirect("product_list");
             } else {
                 log.error("user's password with email " + email + " is invalid");

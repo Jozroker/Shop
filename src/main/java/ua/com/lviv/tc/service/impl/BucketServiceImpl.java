@@ -2,6 +2,7 @@ package ua.com.lviv.tc.service.impl;
 
 import org.apache.log4j.Logger;
 import ua.com.lviv.tc.entity.Bucket;
+import ua.com.lviv.tc.entity.Product;
 import ua.com.lviv.tc.repositories.BucketRepository;
 import ua.com.lviv.tc.repositories.impl.BucketRepositoryImpl;
 import ua.com.lviv.tc.service.BucketService;
@@ -56,9 +57,9 @@ public class BucketServiceImpl implements BucketService {
     }
 
     @Override
-    public Map<Integer, Integer> getProductsInBucket(Bucket bucket) {
-        log.debug("getting products from bucket " + bucket);
-        return bucketRepository.getProductsInBucket(bucket);
+    public Map<Product, Integer> getProductsInBucket(Integer bucketId) {
+        log.debug("getting products from bucket by id " + bucketId);
+        return bucketRepository.getProductsInBucket(bucketId);
     }
 
     @Override

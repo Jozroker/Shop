@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25a9c77e-e280-4ff5-a652-970e2b375550" name="Default Changelist" comment="beta test v0.4">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e276438b6af6b388ac39e61d03b2ba7ced1a86b9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e276438b6af6b388ac39e61d03b2ba7ced1a86b9" afterDir="false" />
+    <list default="true" id="25a9c77e-e280-4ff5-a652-970e2b375550" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af170f24bbfd32b7962684e8727b32e20b3648b5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af170f24bbfd32b7962684e8727b32e20b3648b5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rolling.out" beforeDir="false" afterPath="$PROJECT_DIR$/rolling.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rolling.out.1" beforeDir="false" afterPath="$PROJECT_DIR$/rolling.out.1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rolling.out.2" beforeDir="false" afterPath="$PROJECT_DIR$/rolling.out.2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rolling.out.3" beforeDir="false" afterPath="$PROJECT_DIR$/rolling.out.3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AddToBucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AddToBucketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/ProductListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/ProductListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/BucketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/BucketRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/BucketRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/BucketRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/BucketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/BucketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/BucketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/BucketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cabinet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cabinet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/create-product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/create-product.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/product-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/javascript/productListScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javascript/productListScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/update-product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/update-product.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +45,11 @@
       <list>
         <option value="Tag Library Descriptor" />
         <option value="JUnit5 Test Class" />
-        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -77,7 +83,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
@@ -93,10 +99,10 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp" />
       <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp\resources" />
       <recent name="F:\PC_Educate\Programming\java\shop\src\main\resources" />
       <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp\WEB-INF" />
-      <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ua.com.lviv.tc.controller" />
@@ -242,7 +248,8 @@
       <workItem from="1589217078770" duration="2606000" />
       <workItem from="1589278500197" duration="30180000" />
       <workItem from="1589398425697" duration="327000" />
-      <workItem from="1590447130639" duration="3900000" />
+      <workItem from="1590447130639" duration="3953000" />
+      <workItem from="1590504433002" duration="14705000" />
     </task>
     <task id="LOCAL-00001" summary="first add">
       <created>1588782790729</created>
@@ -279,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589397784366</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="beta test v0.5 (bucket counter fix)">
+      <created>1590451067394</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590451067394</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +318,8 @@
     <MESSAGE value="beta test v0.2" />
     <MESSAGE value="beta test v0.3" />
     <MESSAGE value="beta test v0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta test v0.4" />
+    <MESSAGE value="beta test v0.5 (bucket counter fix)" />
+    <option name="LAST_COMMIT_MESSAGE" value="beta test v0.5 (bucket counter fix)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="936" y="197" key="#Auto_Import" timestamp="1588166728628">
@@ -327,10 +342,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="309" y="176" width="1092" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1589328429778" />
-    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1589397214504">
+    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1590519457654">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1589397214504" />
+    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590519457654" />
     <state x="1258" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588163008656">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -347,30 +362,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="918" y="387" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080@0.0.1920.1080" timestamp="1588936918345" />
-    <state x="549" y="134" key="CommitChangelistDialog2" timestamp="1589397781393">
+    <state x="549" y="134" key="CommitChangelistDialog2" timestamp="1590521334004">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="549" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1589397781393" />
-    <state x="561" y="242" key="FileChooserDialogImpl" timestamp="1589984164198">
+    <state x="549" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1590521334004" />
+    <state x="561" y="242" key="FileChooserDialogImpl" timestamp="1590504572109">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="561" y="242" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1589984164198" />
-    <state width="1878" height="333" key="GridCell.Tab.0.bottom" timestamp="1590451029302">
+    <state x="561" y="242" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1590504572109" />
+    <state width="1878" height="333" key="GridCell.Tab.0.bottom" timestamp="1590521299349">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="333" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590451029302" />
-    <state width="1878" height="333" key="GridCell.Tab.0.center" timestamp="1590451029302">
+    <state width="1878" height="333" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590521299349" />
+    <state width="1878" height="333" key="GridCell.Tab.0.center" timestamp="1590521299349">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="333" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590451029302" />
-    <state width="1878" height="333" key="GridCell.Tab.0.left" timestamp="1590451029302">
+    <state width="1878" height="333" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590521299349" />
+    <state width="1878" height="333" key="GridCell.Tab.0.left" timestamp="1590521299349">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="333" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590451029302" />
-    <state width="1878" height="333" key="GridCell.Tab.0.right" timestamp="1590451029302">
+    <state width="1878" height="333" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590521299349" />
+    <state width="1878" height="333" key="GridCell.Tab.0.right" timestamp="1590521299349">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="333" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590451029302" />
+    <state width="1878" height="333" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590521299349" />
     <state width="1878" height="246" key="GridCell.Tab.1.bottom" timestamp="1590450924327">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -395,10 +410,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="351" y="191" width="1271" height="738" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1589281997655" />
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1589397792280">
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590451071458">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1589397792280" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590451071458" />
     <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588285171325">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

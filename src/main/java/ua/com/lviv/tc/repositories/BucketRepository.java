@@ -1,12 +1,13 @@
 package ua.com.lviv.tc.repositories;
 
 import ua.com.lviv.tc.entity.Bucket;
+import ua.com.lviv.tc.entity.Product;
 
 import java.util.Map;
 
 public interface BucketRepository extends CrudRepository<Bucket, Integer> {
 
-    Map<Integer, Integer> getProductsInBucket(Bucket bucket);
+    Map<Product, Integer> getProductsInBucket(Integer bucketId);
 
     Integer getProductsCountInBucket(Integer bucketId);
 

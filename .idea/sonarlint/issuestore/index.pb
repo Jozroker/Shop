@@ -103,3 +103,5 @@ r
 Bsrc/main/java/ua/com/lviv/tc/controller/AddToBucketController.java,5\3\53ded7124f755ff5a95a9f273e5136bf267b4f69
 V
 &src/main/java/ua/com/lviv/tc/Main.java,0\c\0cc8c44f83c313860885a0f37edf699a63cbd3d1
+8
+shop.iml,9\3\936868cfff4d9e575a4505de73ec781074270942

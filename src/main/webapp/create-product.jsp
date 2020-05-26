@@ -63,7 +63,7 @@
                     ${name}
                 </a>
                 <div id="navbarDropdownMenu" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">View bucket</a>
+                    <a class="dropdown-item" href="/bucket">Bucket (${productsInBucket})</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/logout">Log out</a>
                 </div>

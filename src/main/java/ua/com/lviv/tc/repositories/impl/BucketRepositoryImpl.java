@@ -4,9 +4,11 @@ import org.apache.log4j.Logger;
 import org.omg.CORBA.INTERNAL;
 import ua.com.lviv.tc.config.ConnectionManager;
 import ua.com.lviv.tc.entity.Bucket;
+import ua.com.lviv.tc.entity.Product;
 import ua.com.lviv.tc.entity.User;
 import ua.com.lviv.tc.repositories.BucketRepository;
 
+import java.math.BigDecimal;
 import java.sql.*;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -133,19 +135,24 @@ public class BucketRepositoryImpl implements BucketRepository {
     }
 
     @Override
-    public Map<Integer, Integer> getProductsInBucket(Bucket bucket) {
-        Map<Integer, Integer> products = new HashMap<>();
-        try (PreparedStatement statement = connection.prepareStatement("select * from bucket_product where bucket_id = ?")) {
-            statement.setInt(1, bucket.getId());
+    public Map<Product, Integer> getProductsInBucket(Integer bucketId) {
+        Map<Product, Integer> products = new TreeMap<>();
+        try (PreparedStatement statement = connection.prepareStatement("select * from bucket_product join product on product.id = product_id where bucket_id = ?")) {
+            statement.setInt(1, bucketId);
             try (ResultSet result = statement.executeQuery()) {
                 while(result.next()) {
                     int productId = result.getInt("product_id");
                     int productCount = result.getInt("product_count");
-                    products.put(productId, productCount);
+                    int productCountInStorage = result.getInt("count");
+                    String productName = result.getString("name");
+                    String productDescription = result.getString("description");
+                    BigDecimal productPrice = result.getBigDecimal("price");
+                    Product product = new Product(productId, productName, productDescription, productPrice, productCountInStorage);
+                    products.put(product, productCount);
                 }
             }
         } catch (SQLException e) {
-            log.error("Error while read products with bucket " + bucket.toString(), e);
+            log.error("Error while read products with bucket by id " + bucketId, e);
         }
         return products;
     }

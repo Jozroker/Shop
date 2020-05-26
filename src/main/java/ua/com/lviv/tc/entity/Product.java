@@ -1,8 +1,9 @@
 package ua.com.lviv.tc.entity;
 
 import java.math.BigDecimal;
+import java.util.Comparator;
 
-public class Product {
+public class Product implements Comparable<Product> {
 
     private Integer id;
 
@@ -78,5 +79,10 @@ public class Product {
                 ", price=" + price +
                 ", count=" + count +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Product p) {
+        return this.name.compareTo(p.getName());
     }
 }

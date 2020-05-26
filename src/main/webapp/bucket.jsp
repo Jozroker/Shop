@@ -15,8 +15,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="resources/javascript/productListScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="resources/javascript/bucketChangeCount.js"></script>
     <script>
         $(document).ready(function () {
             <%--role = "<%= session.getAttribute("role")%>";--%>
@@ -62,6 +62,12 @@
             display: inline;
         }
 
+        .mb-3 .row {
+            margin: 20px;
+        }
+
+
+
         /*.card {*/
         /*    margin: 5px;*/
         /*}*/
@@ -97,23 +103,44 @@
         </div>
     </ul>
 
-    <div id="card-deck" class="row">
-        <c:forEach items="${products}" var="products">
-            <div class="col-sm-3">
-                <div class="card mb-3">
-                    <img src="/resources/image/no-image.png" class="card-img-top" alt="product image">
-                    <div class="card-body">
-                        <h5 class="card-title">${products.name}</h5>
-                        <p class="card-text">${products.description}</p>
-                        <p id="price" class="card-text">${products.price} $</p>
-                        <img id="basket${products.id}" class="float-right" width="30px" height="30px"
-                             src="/resources/image/basket.png" alt="basket icon" onclick="buyNow(${products.id}, ${productsInBucket})"/>
-<%--                            ${productsInBucket} = sessionStorage.getItem('productsInBucket')--%>
+<%--    <div id="card-deck" class="row">--%>
+<%--        <c:forEach items="${products}" var="products">--%>
+<%--            <div class="col-sm-3">--%>
+<%--                <div class="card mb-3">--%>
+<%--                    <img src="/resources/image/no-image.png" class="card-img-top" alt="product image">--%>
+<%--                    <div class="card-body">--%>
+<%--                        <h5 class="card-title">${products.name}</h5>--%>
+<%--                        <p class="card-text">${products.description}</p>--%>
+<%--                        <p id="price" class="card-text">${products.price} $</p>--%>
+<%--                        <img id="basket${products.id}" class="float-right" width="30px" height="30px"--%>
+<%--                             src="/resources/image/basket.png" alt="basket icon" onclick="buyNow(${products.id}, ${productsInBucket})"/>--%>
+<%--&lt;%&ndash;                            ${productsInBucket} = sessionStorage.getItem('productsInBucket')&ndash;%&gt;--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--        </c:forEach>--%>
+<%--    </div>--%>
+        <div class="card mb-3" style="max-width: 90%;">
+            <c:forEach items="${products}" var="entry">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="/resources/image/no-image.png" class="card-img" alt="product image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">${entry.key.name}</h5>
+                            <p class="card-text">${entry.key.description}</p>
+                            <p class="card-text"><small class="text-muted">Price: ${entry.key.price}</small></p>
+                            <p class="card-text"><small class="text-muted">Count:
+                                <button id="minus" type="button" class="btn btn-primary" onclick="subtract(${bucketId}, ${entry.key.id}, ${entry.value})">-</button>
+                                <span id="count">${entry.value}</span>
+                                <button id="plus" type="button" class="btn btn-primary" onclick="add(${bucketId}, ${entry.key.id}, ${entry.value})">+</button>
+                            </small></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </c:forEach>
-    </div>
+            </c:forEach>
+        </div>
     <jsp:include page="footer.jsp"/>
 </body>
 </html>
