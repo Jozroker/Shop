@@ -1,5 +1,6 @@
-2020-05-27 01:29:46 DEBUG getting products count from bucket by id 1
-2020-05-27 01:29:46 ERROR Error while read products count in bucket by id 1
+2020-05-27 01:30:03 INFO  filtering request
+2020-05-27 01:30:03 DEBUG find all products
+2020-05-27 01:30:03 ERROR Error while finding all products
 java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
@@ -9,9 +10,9 @@ java.sql.SQLNonTransientConnectionException: No operations allowed after connect
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
 	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1674)
 	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1590)
-	at ua.com.lviv.tc.repositories.impl.BucketRepositoryImpl.getProductsCountInBucket(BucketRepositoryImpl.java:197)
-	at ua.com.lviv.tc.service.impl.BucketServiceImpl.getProductsCountInBucket(BucketServiceImpl.java:86)
-	at ua.com.lviv.tc.controller.ProductListController.doGet(ProductListController.java:32)
+	at ua.com.lviv.tc.repositories.impl.ProductRepositoryImpl.findAll(ProductRepositoryImpl.java:66)
+	at ua.com.lviv.tc.service.impl.ProductServiceImpl.findAll(ProductServiceImpl.java:43)
+	at ua.com.lviv.tc.controller.ProductListController.doGet(ProductListController.java:30)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)

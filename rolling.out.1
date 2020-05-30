@@ -1,101 +1,60 @@
-2020-05-27 01:30:03 DEBUG getting products count from bucket by id 1
-2020-05-27 01:30:03 ERROR Error while read products count in bucket by id 1
-java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
-	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1674)
-	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1590)
-	at ua.com.lviv.tc.repositories.impl.BucketRepositoryImpl.getProductsCountInBucket(BucketRepositoryImpl.java:197)
-	at ua.com.lviv.tc.service.impl.BucketServiceImpl.getProductsCountInBucket(BucketServiceImpl.java:86)
-	at ua.com.lviv.tc.controller.ProductListController.doGet(ProductListController.java:32)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at ua.com.lviv.tc.controller.filter.LoginFilter.doFilter(LoginFilter.java:31)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
-	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1259)
-	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:575)
-	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1605)
-	... 28 more
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: The last packet successfully received from the server was 191 241 milliseconds ago.  The last packet sent successfully to the server was 191 241 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
-	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
-	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
-	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1153)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:951)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1024)
-	at ua.com.lviv.tc.repositories.impl.UserRepositoryImpl.findByEmail(UserRepositoryImpl.java:129)
-	at ua.com.lviv.tc.service.impl.UserServiceImpl.findByEmail(UserServiceImpl.java:36)
-	at ua.com.lviv.tc.controller.PersonalCabinetController.doGet(PersonalCabinetController.java:22)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at ua.com.lviv.tc.controller.filter.LoginFilter.doFilter(LoginFilter.java:31)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
-	... 3 more
-Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
-	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
-	... 33 more
+2020-05-27 01:30:13 INFO  init login filter
+2020-05-27 01:30:13 INFO  init admin filter
+2020-05-27 01:30:13 INFO  creating connection to database
+2020-05-27 01:30:14 DEBUG connection was created successfully
+2020-05-27 01:30:14 INFO  creating connection to database
+2020-05-27 01:30:14 DEBUG connection was created successfully
+2020-05-27 01:30:14 INFO  filtering request
+2020-05-27 01:30:14 INFO  creating connection to database
+2020-05-27 01:30:14 DEBUG connection was created successfully
+2020-05-27 01:30:14 INFO  load login.jsp page
+2020-05-27 01:30:14 INFO  filtering request
+2020-05-27 01:30:14 INFO  load login.jsp page
+2020-05-27 01:30:17 INFO  filtering request
+2020-05-27 01:30:17 DEBUG find user by email admin@mail
+2020-05-27 01:30:17 INFO  filtering request
+2020-05-27 01:30:17 DEBUG find all products
+2020-05-27 01:30:17 DEBUG getting products count from bucket by id 1
+2020-05-27 01:30:17 INFO  filtering request
+2020-05-27 01:30:18 INFO  filtering request
+2020-05-27 01:30:18 DEBUG find user by email admin@mail
+2020-05-27 01:30:18 INFO  filtering request
+2020-05-27 01:31:20 INFO  filtering request
+2020-05-27 01:31:20 DEBUG find user by email admin@mail
+2020-05-27 01:32:07 INFO  filtering request
+2020-05-27 01:32:07 DEBUG find user by email admin@mail
+2020-05-27 01:32:31 INFO  filtering request
+2020-05-27 01:32:31 DEBUG find user by email admin@mail
+2020-05-27 01:34:27 INFO  filtering request
+2020-05-27 01:34:27 DEBUG find user by email admin@mail
+2020-05-27 01:34:27 INFO  filtering request
+2020-05-27 01:34:47 INFO  filtering request
+2020-05-27 01:34:47 DEBUG find user by email admin@mail
+2020-05-27 01:35:34 INFO  filtering request
+2020-05-27 01:35:34 DEBUG find user by email admin@mail
+2020-05-27 01:36:04 INFO  filtering request
+2020-05-27 01:36:04 DEBUG find all products
+2020-05-27 01:36:04 DEBUG getting products count from bucket by id 1
+2020-05-27 01:36:10 INFO  filtering admin request
+2020-05-27 01:36:10 INFO  this is admin
+2020-05-27 01:36:10 INFO  filtering request
+2020-05-27 01:36:10 DEBUG request to get create product page
+2020-05-27 01:36:10 INFO  filtering request
+2020-05-27 01:36:16 INFO  filtering request
+2020-05-27 01:36:16 INFO  exit from all pages to login.jsp page
+2020-05-27 01:36:16 INFO  filtering request
+2020-05-27 01:36:16 INFO  load login.jsp page
+2020-05-30 18:58:19 INFO  init login filter
+2020-05-30 18:58:19 INFO  init admin filter
+2020-05-30 18:58:23 INFO  filtering request
+2020-05-30 18:58:23 INFO  creating connection to database
+2020-05-30 18:58:23 DEBUG connection was created successfully
+2020-05-30 18:58:23 INFO  creating connection to database
+2020-05-30 18:58:23 DEBUG connection was created successfully
+2020-05-30 18:58:24 INFO  load login.jsp page
+2020-05-30 18:58:29 INFO  filtering request
+2020-05-30 18:58:29 DEBUG find user by email admin@mail
+2020-05-30 18:58:29 INFO  creating connection to database
+2020-05-30 18:58:29 DEBUG connection was created successfully
+2020-05-30 18:58:29 INFO  filtering request
+2020-05-30 18:58:29 DEBUG find all products

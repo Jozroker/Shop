@@ -1,46 +1,49 @@
-2020-05-27 01:30:13 INFO  init login filter
-2020-05-27 01:30:13 INFO  init admin filter
-2020-05-27 01:30:13 INFO  creating connection to database
-2020-05-27 01:30:14 DEBUG connection was created successfully
-2020-05-27 01:30:14 INFO  creating connection to database
-2020-05-27 01:30:14 DEBUG connection was created successfully
-2020-05-27 01:30:14 INFO  filtering request
-2020-05-27 01:30:14 INFO  creating connection to database
-2020-05-27 01:30:14 DEBUG connection was created successfully
-2020-05-27 01:30:14 INFO  load login.jsp page
-2020-05-27 01:30:14 INFO  filtering request
-2020-05-27 01:30:14 INFO  load login.jsp page
-2020-05-27 01:30:17 INFO  filtering request
-2020-05-27 01:30:17 DEBUG find user by email admin@mail
-2020-05-27 01:30:17 INFO  filtering request
-2020-05-27 01:30:17 DEBUG find all products
-2020-05-27 01:30:17 DEBUG getting products count from bucket by id 1
-2020-05-27 01:30:17 INFO  filtering request
-2020-05-27 01:30:18 INFO  filtering request
-2020-05-27 01:30:18 DEBUG find user by email admin@mail
-2020-05-27 01:30:18 INFO  filtering request
-2020-05-27 01:31:20 INFO  filtering request
-2020-05-27 01:31:20 DEBUG find user by email admin@mail
-2020-05-27 01:32:07 INFO  filtering request
-2020-05-27 01:32:07 DEBUG find user by email admin@mail
-2020-05-27 01:32:31 INFO  filtering request
-2020-05-27 01:32:31 DEBUG find user by email admin@mail
-2020-05-27 01:34:27 INFO  filtering request
-2020-05-27 01:34:27 DEBUG find user by email admin@mail
-2020-05-27 01:34:27 INFO  filtering request
-2020-05-27 01:34:47 INFO  filtering request
-2020-05-27 01:34:47 DEBUG find user by email admin@mail
-2020-05-27 01:35:34 INFO  filtering request
-2020-05-27 01:35:34 DEBUG find user by email admin@mail
-2020-05-27 01:36:04 INFO  filtering request
-2020-05-27 01:36:04 DEBUG find all products
-2020-05-27 01:36:04 DEBUG getting products count from bucket by id 1
-2020-05-27 01:36:10 INFO  filtering admin request
-2020-05-27 01:36:10 INFO  this is admin
-2020-05-27 01:36:10 INFO  filtering request
-2020-05-27 01:36:10 DEBUG request to get create product page
-2020-05-27 01:36:10 INFO  filtering request
-2020-05-27 01:36:16 INFO  filtering request
-2020-05-27 01:36:16 INFO  exit from all pages to login.jsp page
-2020-05-27 01:36:16 INFO  filtering request
-2020-05-27 01:36:16 INFO  load login.jsp page
+2020-05-30 18:58:29 DEBUG getting products count from bucket by id 1
+2020-05-30 18:58:30 INFO  filtering request
+2020-05-30 18:58:30 INFO  filtering request
+2020-05-30 18:58:30 INFO  filtering request
+2020-05-30 18:58:33 INFO  filtering request
+2020-05-30 18:58:33 DEBUG getting products from bucket by id 1
+2020-05-30 18:58:33 INFO  load bucket.jsp page
+2020-05-30 18:58:33 INFO  filtering request
+2020-05-30 18:58:34 INFO  filtering request
+2020-05-30 18:58:34 DEBUG find all products
+2020-05-30 18:58:34 DEBUG getting products count from bucket by id 1
+2020-05-30 18:58:36 INFO  filtering request
+2020-05-30 18:58:36 INFO  add product to bucket
+2020-05-30 18:58:36 DEBUG adding product 1 to bucket by id 1
+2020-05-30 18:58:36 DEBUG getting products count from bucket by id 1
+2020-05-30 18:58:36 INFO  filtering request
+2020-05-30 18:58:37 INFO  filtering request
+2020-05-30 18:58:37 DEBUG find user by email admin@mail
+2020-05-30 18:58:37 INFO  filtering request
+2020-05-30 18:58:38 INFO  filtering request
+2020-05-30 18:58:38 DEBUG getting products from bucket by id 1
+2020-05-30 18:58:38 INFO  load bucket.jsp page
+2020-05-30 18:58:42 INFO  filtering request
+2020-05-30 18:58:42 DEBUG find user by email admin@mail
+2020-05-30 18:58:42 INFO  filtering request
+2020-05-30 19:01:22 INFO  filtering request
+2020-05-30 19:01:22 DEBUG find user by email admin@mail
+2020-05-30 19:01:22 INFO  filtering request
+2020-05-30 19:01:22 INFO  filtering request
+2020-05-30 19:01:38 INFO  filtering admin request
+2020-05-30 19:01:38 INFO  this is admin
+2020-05-30 19:01:38 INFO  filtering request
+2020-05-30 19:01:38 DEBUG request to get create product page
+2020-05-30 19:01:38 INFO  filtering request
+2020-05-30 19:01:38 INFO  filtering admin request
+2020-05-30 19:01:38 INFO  this is admin
+2020-05-30 19:01:38 INFO  filtering request
+2020-05-30 19:01:38 DEBUG request to get update product page
+2020-05-30 19:01:38 INFO  filtering request
+2020-05-30 19:01:39 INFO  filtering request
+2020-05-30 19:01:39 DEBUG find all products
+2020-05-30 19:01:39 DEBUG getting products count from bucket by id 1
+2020-05-30 19:01:39 INFO  filtering request
+2020-05-30 19:01:39 INFO  filtering request
+2020-05-30 19:01:39 INFO  filtering request
+2020-05-30 19:01:41 INFO  filtering request
+2020-05-30 19:01:41 INFO  exit from all pages to login.jsp page
+2020-05-30 19:01:41 INFO  filtering request
+2020-05-30 19:01:41 INFO  load login.jsp page
