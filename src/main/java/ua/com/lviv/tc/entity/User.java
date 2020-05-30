@@ -1,38 +1,64 @@
 package ua.com.lviv.tc.entity;
 
+import com.sun.istack.NotNull;
+import lombok.*;
+
+import javax.persistence.*;
+
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "user")
 public class User {
 
-    private Integer id;
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @NotNull
+    private Long id;
 
+    @Column(name = "first_name")
+    @NotNull
     private String firstName;
 
+    @Column(name = "last_name")
+    @NotNull
     private String lastName;
 
+    @Column(name = "password")
+    @NotNull
     private String password;
 
+    @Column(name = "role")
+    @NotNull
     private String role;
 
+    @Column(name = "email")
+    @NotNull
     private String email;
 
-    private Integer bucketId;
+//    @Column(name = "bucket_id", nullable = false)
+//    @NotNull
+//    private Integer bucketId;
 
-    public User(Integer id, String firstName, String lastName, String password, String role, String email, Integer bucketId) {
-        this.id = id;
+    @OneToOne
+    @JoinColumn(name = "bucket_id")
+    private Bucket bucket;
+
+//    public void setBucket(Bucket bucket) {
+//        this.bucket = bucket;
+//        bucket.setUser(this);
+//    }
+
+    public User(String firstName, String lastName, String password, String role, String email, Bucket bucket) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
         this.role = role;
         this.email = email;
-        this.bucketId = bucketId;
-    }
-
-    public User(String firstName, String lastName, String password, String role, String email, Integer bucketId) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.password = password;
-        this.role = role;
-        this.email = email;
-        this.bucketId = bucketId;
+        this.bucket = bucket;
     }
 
     public User(String firstName, String lastName, String password, String role, String email) {
@@ -41,74 +67,5 @@ public class User {
         this.password = password;
         this.role = role;
         this.email = email;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public Integer getBucketId() {
-        return bucketId;
-    }
-
-    public void setBucketId(Integer bucketId) {
-        this.bucketId = bucketId;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", password='" + password + '\'' +
-                ", role='" + role + '\'' +
-                ", email='" + email + '\'' +
-                ", bucketId='" + bucketId + '\'' +
-                '}';
     }
 }

@@ -1,43 +1,35 @@
 package ua.com.lviv.tc.entity;
 
+import com.sun.istack.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.time.Instant;
 import java.time.LocalDateTime;
 
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "bucket")
 public class Bucket {
 
-    private Integer id;
+    @Id
+    @Column(name = "id")
+    @NotNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    private LocalDateTime purchaseDate;
+    @Column(name = "purchase_date")
+    @NotNull
+    private Instant purchaseDate;
 
-    public Bucket(Integer id, LocalDateTime purchaseDate) {
-        this.id = id;
+
+    public Bucket(Instant purchaseDate) {
         this.purchaseDate = purchaseDate;
-    }
-
-    public Bucket(LocalDateTime purchaseDate) {
-        this.purchaseDate = purchaseDate;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public LocalDateTime getPurchaseDate() {
-        return purchaseDate;
-    }
-
-    public void setPurchaseDate(LocalDateTime purchaseDate) {
-        this.purchaseDate = purchaseDate;
-    }
-
-    @Override
-    public String toString() {
-        return "Bucket{" +
-                "id=" + id +
-                ", purchaseDate=" + purchaseDate +
-                '}';
     }
 }

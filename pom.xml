@@ -65,11 +65,23 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.4.15.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
         </dependency>
-<!--        <dependency>-->
+
+        <!--        <dependency>-->
 <!--            <groupId>org.junit.jupiter</groupId>-->
 <!--            <artifactId>junit-jupiter-engine</artifactId>-->
 <!--            <version>5.5.2</version>-->

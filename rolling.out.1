@@ -1,60 +1,48 @@
-2020-05-27 01:30:13 INFO  init login filter
-2020-05-27 01:30:13 INFO  init admin filter
-2020-05-27 01:30:13 INFO  creating connection to database
-2020-05-27 01:30:14 DEBUG connection was created successfully
-2020-05-27 01:30:14 INFO  creating connection to database
-2020-05-27 01:30:14 DEBUG connection was created successfully
-2020-05-27 01:30:14 INFO  filtering request
-2020-05-27 01:30:14 INFO  creating connection to database
-2020-05-27 01:30:14 DEBUG connection was created successfully
-2020-05-27 01:30:14 INFO  load login.jsp page
-2020-05-27 01:30:14 INFO  filtering request
-2020-05-27 01:30:14 INFO  load login.jsp page
-2020-05-27 01:30:17 INFO  filtering request
-2020-05-27 01:30:17 DEBUG find user by email admin@mail
-2020-05-27 01:30:17 INFO  filtering request
-2020-05-27 01:30:17 DEBUG find all products
-2020-05-27 01:30:17 DEBUG getting products count from bucket by id 1
-2020-05-27 01:30:17 INFO  filtering request
-2020-05-27 01:30:18 INFO  filtering request
-2020-05-27 01:30:18 DEBUG find user by email admin@mail
-2020-05-27 01:30:18 INFO  filtering request
-2020-05-27 01:31:20 INFO  filtering request
-2020-05-27 01:31:20 DEBUG find user by email admin@mail
-2020-05-27 01:32:07 INFO  filtering request
-2020-05-27 01:32:07 DEBUG find user by email admin@mail
-2020-05-27 01:32:31 INFO  filtering request
-2020-05-27 01:32:31 DEBUG find user by email admin@mail
-2020-05-27 01:34:27 INFO  filtering request
-2020-05-27 01:34:27 DEBUG find user by email admin@mail
-2020-05-27 01:34:27 INFO  filtering request
-2020-05-27 01:34:47 INFO  filtering request
-2020-05-27 01:34:47 DEBUG find user by email admin@mail
-2020-05-27 01:35:34 INFO  filtering request
-2020-05-27 01:35:34 DEBUG find user by email admin@mail
-2020-05-27 01:36:04 INFO  filtering request
-2020-05-27 01:36:04 DEBUG find all products
-2020-05-27 01:36:04 DEBUG getting products count from bucket by id 1
-2020-05-27 01:36:10 INFO  filtering admin request
-2020-05-27 01:36:10 INFO  this is admin
-2020-05-27 01:36:10 INFO  filtering request
-2020-05-27 01:36:10 DEBUG request to get create product page
-2020-05-27 01:36:10 INFO  filtering request
-2020-05-27 01:36:16 INFO  filtering request
-2020-05-27 01:36:16 INFO  exit from all pages to login.jsp page
-2020-05-27 01:36:16 INFO  filtering request
-2020-05-27 01:36:16 INFO  load login.jsp page
-2020-05-30 18:58:19 INFO  init login filter
-2020-05-30 18:58:19 INFO  init admin filter
-2020-05-30 18:58:23 INFO  filtering request
-2020-05-30 18:58:23 INFO  creating connection to database
-2020-05-30 18:58:23 DEBUG connection was created successfully
-2020-05-30 18:58:23 INFO  creating connection to database
-2020-05-30 18:58:23 DEBUG connection was created successfully
-2020-05-30 18:58:24 INFO  load login.jsp page
-2020-05-30 18:58:29 INFO  filtering request
-2020-05-30 18:58:29 DEBUG find user by email admin@mail
-2020-05-30 18:58:29 INFO  creating connection to database
-2020-05-30 18:58:29 DEBUG connection was created successfully
-2020-05-30 18:58:29 INFO  filtering request
-2020-05-30 18:58:29 DEBUG find all products
+2020-05-30 22:45:44 INFO  HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/jpa_shop?serverTimezone=UTC]
+2020-05-30 22:45:44 INFO  HHH10001001: Connection properties: {user=root, password=root}
+2020-05-30 22:45:44 INFO  HHH10001003: Autocommit mode: false
+2020-05-30 22:45:44 DEBUG Initializing Connection pool with 1 Connections
+2020-05-30 22:45:44 INFO  HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-05-30 22:45:44 WARN  HHH000342: Could not obtain connection to query metadata : null
+2020-05-30 22:45:44 INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-30 22:45:44 DEBUG IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2020-05-30 22:45:44 DEBUG HHH000422: Disabling contextual LOB creation as connection was null
+2020-05-30 22:45:44 DEBUG Error calling Driver#connect [null]
+java.sql.SQLSyntaxErrorException: Unknown database 'jpa_shop'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:38)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:58)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections(DriverManagerConnectionProviderImpl.java:331)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:250)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:228)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build(DriverManagerConnectionProviderImpl.java:369)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:98)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:73)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:107)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:145)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1214)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1245)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at ua.com.lviv.tc.Main.main(Main.java:10)

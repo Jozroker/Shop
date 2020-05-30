@@ -1,102 +1,29 @@
-2020-05-27 01:30:03 INFO  filtering request
-2020-05-27 01:30:03 DEBUG find all products
-2020-05-27 01:30:03 ERROR Error while finding all products
-java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
-	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1674)
-	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1590)
-	at ua.com.lviv.tc.repositories.impl.ProductRepositoryImpl.findAll(ProductRepositoryImpl.java:66)
-	at ua.com.lviv.tc.service.impl.ProductServiceImpl.findAll(ProductServiceImpl.java:43)
-	at ua.com.lviv.tc.controller.ProductListController.doGet(ProductListController.java:30)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at ua.com.lviv.tc.controller.filter.LoginFilter.doFilter(LoginFilter.java:31)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
-	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1259)
-	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:575)
-	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1605)
-	... 28 more
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: The last packet successfully received from the server was 191 241 milliseconds ago.  The last packet sent successfully to the server was 191 241 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
-	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
-	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
-	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1153)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:951)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1024)
-	at ua.com.lviv.tc.repositories.impl.UserRepositoryImpl.findByEmail(UserRepositoryImpl.java:129)
-	at ua.com.lviv.tc.service.impl.UserServiceImpl.findByEmail(UserServiceImpl.java:36)
-	at ua.com.lviv.tc.controller.PersonalCabinetController.doGet(PersonalCabinetController.java:22)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at ua.com.lviv.tc.controller.filter.LoginFilter.doFilter(LoginFilter.java:31)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
-	... 3 more
-Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
-	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
-	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
-	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
-	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
-	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
-	... 33 more
+2020-05-30 22:45:43 DEBUG Adding type registration byte[] -> org.hibernate.type.BinaryType@1cbbffcd
+2020-05-30 22:45:43 DEBUG Adding type registration [B -> org.hibernate.type.BinaryType@1cbbffcd
+2020-05-30 22:45:43 DEBUG Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@28eaa59a
+2020-05-30 22:45:43 DEBUG Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@28eaa59a
+2020-05-30 22:45:43 DEBUG Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@28eaa59a
+2020-05-30 22:45:43 DEBUG Adding type registration row_version -> org.hibernate.type.RowVersionType@35ef1869
+2020-05-30 22:45:43 DEBUG Adding type registration image -> org.hibernate.type.ImageType@2c767a52
+2020-05-30 22:45:43 DEBUG Adding type registration characters -> org.hibernate.type.CharArrayType@2ef3eef9
+2020-05-30 22:45:43 DEBUG Adding type registration char[] -> org.hibernate.type.CharArrayType@2ef3eef9
+2020-05-30 22:45:43 DEBUG Adding type registration [C -> org.hibernate.type.CharArrayType@2ef3eef9
+2020-05-30 22:45:43 DEBUG Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@16ec5519
+2020-05-30 22:45:43 DEBUG Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@16ec5519
+2020-05-30 22:45:43 DEBUG Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@16ec5519
+2020-05-30 22:45:43 DEBUG Adding type registration text -> org.hibernate.type.TextType@1ea9f6af
+2020-05-30 22:45:43 DEBUG Adding type registration ntext -> org.hibernate.type.NTextType@7193666c
+2020-05-30 22:45:43 DEBUG Adding type registration blob -> org.hibernate.type.BlobType@56620197
+2020-05-30 22:45:43 DEBUG Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@56620197
+2020-05-30 22:45:43 DEBUG Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5f058f00
+2020-05-30 22:45:43 DEBUG Adding type registration clob -> org.hibernate.type.ClobType@333291e3
+2020-05-30 22:45:43 DEBUG Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@333291e3
+2020-05-30 22:45:43 DEBUG Adding type registration nclob -> org.hibernate.type.NClobType@59fd97a8
+2020-05-30 22:45:43 DEBUG Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@59fd97a8
+2020-05-30 22:45:43 DEBUG Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@dbf57b3
+2020-05-30 22:45:43 DEBUG Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@441772e
+2020-05-30 22:45:43 DEBUG Adding type registration serializable -> org.hibernate.type.SerializableType@6c80d78a
+2020-05-30 22:45:43 DEBUG Adding type registration object -> org.hibernate.type.ObjectType@74e52303
+2020-05-30 22:45:43 DEBUG Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@74e52303
+2020-05-30 22:45:43 DEBUG Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3bb9a3ff
+2020-05-30 22:45:43 DEBUG Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@661972b0

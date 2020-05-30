@@ -9,8 +9,6 @@ O
 src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-j
-:src/main/java/ua/com/lviv/tc/config/ConnectionManager.java,4\6\462850454bcd4afaf14f40bf6c77afe3902977c7
 p
 @src/main/java/ua/com/lviv/tc/repositories/ProductRepository.java,a\8\a852e41c9611e2544fe54f384b7e01ca71b834e6
 o
@@ -59,16 +57,6 @@ h
 8src/main/java/ua/com/lviv/tc/service/ProductService.java,3\7\3777f9201718bd89d93c081e3e5f9ccfa1ff055a
 O
 target/classes/log4j.properties,f\9\f999cf84ddbf4408702ce6efea49a8266db5d1e8
-‚
-Rtarget/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst,8\a\8ae396f369da14bb5c0973286facff8fb2c70d56
-€
-Ptarget/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst,3\d\3da01db98b88a8057c03354880f06dba49d3e795
-U
-%target/tomcat/conf/logging.properties,8\2\82ca0c67fec3fb50d894c652f14240e95a8587fd
-S
-#target/tomcat/conf/tomcat-users.xml,9\7\97aca87583db73f35af6c9bd954e35261be68239
-J
-target/tomcat/conf/web.xml,d\5\d55b71eaf52bcdf24ced21040cf2422f0a09b19d
 ;
 rolling.out,4\8\48523692b1601d0047d283af72c67075633806e3
 =
@@ -113,3 +101,8 @@ w
 Gsrc/main/java/ua/com/lviv/tc/controller/RemoveFromBucketController.java,3\a\3acd18839742e90aca35ee5abbb280c34c53ee6e
 J
 src/main/webapp/bucket.jsp,f\9\f91ddf8a6b0950216b5c45c5c8e1ecfb1e364bb2
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+f
+6src/main/java/ua/com/lviv/tc/entity/BucketProduct.java,b\8\b8c52d886cdbd1e12cf3a3892195b2f903cf6bd8
