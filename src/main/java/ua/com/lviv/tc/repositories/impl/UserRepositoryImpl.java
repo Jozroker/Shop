@@ -1,14 +1,11 @@
 package ua.com.lviv.tc.repositories.impl;
 
 import org.apache.log4j.Logger;
-import ua.com.lviv.tc.config.ConnectionManager;
 import ua.com.lviv.tc.entity.Bucket;
 import ua.com.lviv.tc.entity.User;
 import ua.com.lviv.tc.repositories.BucketRepository;
 import ua.com.lviv.tc.repositories.UserRepository;
-import ua.com.lviv.tc.service.impl.BucketServiceImpl;
 
-import javax.swing.text.html.Option;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

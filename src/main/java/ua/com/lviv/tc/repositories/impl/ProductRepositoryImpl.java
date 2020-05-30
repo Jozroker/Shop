@@ -1,9 +1,7 @@
 package ua.com.lviv.tc.repositories.impl;
 
 import org.apache.log4j.Logger;
-import ua.com.lviv.tc.config.ConnectionManager;
 import ua.com.lviv.tc.entity.Product;
-import ua.com.lviv.tc.entity.User;
 import ua.com.lviv.tc.repositories.ProductRepository;
 
 import java.math.BigDecimal;

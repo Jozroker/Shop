@@ -354,6 +354,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="969" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588175075013" />
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590855238390">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590855238390" />
     <state x="454" y="213" width="955" height="593" key="#xdebugger.evaluate" timestamp="1590529730676">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

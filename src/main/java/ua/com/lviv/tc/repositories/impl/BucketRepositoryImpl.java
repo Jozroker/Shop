@@ -1,16 +1,12 @@
 package ua.com.lviv.tc.repositories.impl;
 
 import org.apache.log4j.Logger;
-import org.omg.CORBA.INTERNAL;
-import ua.com.lviv.tc.config.ConnectionManager;
 import ua.com.lviv.tc.entity.Bucket;
 import ua.com.lviv.tc.entity.Product;
-import ua.com.lviv.tc.entity.User;
 import ua.com.lviv.tc.repositories.BucketRepository;
 
 import java.math.BigDecimal;
 import java.sql.*;
-import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
