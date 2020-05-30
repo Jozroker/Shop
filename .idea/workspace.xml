@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25a9c77e-e280-4ff5-a652-970e2b375550" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/image/default-avatar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rolling.out" beforeDir="false" afterPath="$PROJECT_DIR$/rolling.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rolling.out.1" beforeDir="false" afterPath="$PROJECT_DIR$/rolling.out.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rolling.out.2" beforeDir="false" afterPath="$PROJECT_DIR$/rolling.out.2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rolling.out.3" beforeDir="false" afterPath="$PROJECT_DIR$/rolling.out.3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/config/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/config/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="jpa" />
+        <entry key="$PROJECT_DIR$" value="release_version_1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,17 +76,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ua.com.lviv.tc.service" />
+      <recent name="ua.com.lviv.tc.service.impl" />
+      <recent name="ua.com.lviv.tc.repositories.impl" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ua.com.lviv.tc.service.impl" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp" />
-      <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp\resources" />
-      <recent name="F:\PC_Educate\Programming\java\shop\src\main\resources" />
-      <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp\WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ua.com.lviv.tc.controller" />
@@ -100,10 +94,11 @@
       <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp\resources\javascript" />
       <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ua.com.lviv.tc.service" />
-      <recent name="ua.com.lviv.tc.service.impl" />
-      <recent name="ua.com.lviv.tc.repositories.impl" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp" />
+      <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp\resources" />
+      <recent name="F:\PC_Educate\Programming\java\shop\src\main\resources" />
+      <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.Maven">
@@ -198,6 +193,7 @@
         <item itemvalue="Application.Main" />
         <item itemvalue="Node.js.test.js" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Node.js.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -342,6 +338,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="309" y="176" width="1092" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1589328429778" />
+    <state x="724" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590855091867">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="724" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590855091867" />
     <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1590519457654">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -406,14 +406,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="874" y="194" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1589375808991" />
+    <state x="751" y="250" key="RollbackChangesDialog" timestamp="1590854874600">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="751" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590854874600" />
     <state x="351" y="191" width="1271" height="738" key="SettingsEditor" timestamp="1589281997655">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="351" y="191" width="1271" height="738" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1589281997655" />
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590521390549">
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590854954484">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590521390549" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590854954484" />
     <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588285171325">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
