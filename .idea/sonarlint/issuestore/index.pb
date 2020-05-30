@@ -49,14 +49,10 @@ o
 ?src/main/java/ua/com/lviv/tc/controller/filter/LoginFilter.java,e\1\e111bac255aaa31737967e4a9a82a594aa692ec1
 o
 ?src/main/java/ua/com/lviv/tc/controller/filter/AdminFilter.java,c\d\cdf9c4aecae5e2097d1c38b0749c16c01efe7f0b
-S
-#src/main/resources/log4j.properties,7\5\755950bb690295904a49d36e60958901c54013b8
 g
 7src/main/java/ua/com/lviv/tc/service/BucketService.java,1\1\11fee5f3ef7bb8d0aff874db92988bcefef9114d
 h
 8src/main/java/ua/com/lviv/tc/service/ProductService.java,3\7\3777f9201718bd89d93c081e3e5f9ccfa1ff055a
-O
-target/classes/log4j.properties,f\9\f999cf84ddbf4408702ce6efea49a8266db5d1e8
 ;
 rolling.out,4\8\48523692b1601d0047d283af72c67075633806e3
 =
@@ -103,3 +99,13 @@ f
 6src/main/java/ua/com/lviv/tc/entity/BucketProduct.java,b\8\b8c52d886cdbd1e12cf3a3892195b2f903cf6bd8
 k
 ;src/main/java/ua/com/lviv/tc/config/DatabaseCreatorJPA.java,5\5\554874d7a3e3e83e85d0acf9585c32cf9340511d
+k
+;src/main/java/ua/com/lviv/tc/config/EntityManagerClass.java,8\a\8ab3c89bb18bf51f286f49fd278037144892d1ae
+}
+Msrc/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java,b\7\b7f6d0656b4bfc8623aea6884829f0faf63d3230
+M
+src/main/test/CustomTest.java,2\c\2c77a05dc34494bd34822204c45a43f3257e8b73
+W
+'target/classes/META-INF/persistence.xml,6\b\6b218a32634615b1febcb25205c6f5e1216f1034
+[
++src/main/resources/META-INF/persistence.xml,3\b\3be4f79b5828b3982f3f6a62bf8fc67b3adedf58

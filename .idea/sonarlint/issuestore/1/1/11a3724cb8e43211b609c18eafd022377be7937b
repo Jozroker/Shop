@@ -1,7 +1,7 @@
 
-v
-java:S1210/"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(€•ÑØ8æÍŸ´¦.
 N
 java:S1128"1Remove this unused import 'java.util.Comparator'.(î¹ó¹8¼«ª¹¦.
+v
+java:S1210/"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(€•ÑØ8æÍŸ´¦.
 W
 java:S1191"5Use classes from the Java API instead of Sun classes.(‡œ£ÿÿÿÿÿ8¡©»¦.
