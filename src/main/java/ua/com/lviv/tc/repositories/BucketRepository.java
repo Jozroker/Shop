@@ -5,15 +5,15 @@ import ua.com.lviv.tc.entity.Product;
 
 import java.util.Map;
 
-public interface BucketRepository extends CrudRepository<Bucket, Integer> {
+public interface BucketRepository extends CrudRepository<Bucket, Long> {
 
-    Map<Product, Integer> getProductsInBucket(Integer bucketId);
+    Map<Product, Integer> getProductsInBucket(Long bucketId);
 
-    Integer getProductsCountInBucket(Integer bucketId);
+    Integer getProductsCountInBucket(Long bucketId);
 
-    void addProduct(Integer bucketId, Integer productId);
+    void addProduct(Long bucketId, Long productId);
 
-    void deleteProduct(Integer bucketId, Integer productId);
+    void deleteProduct(Long bucketId, Long productId);
 
-    void updateProduct(Integer bucketId, Integer productId, Integer count);
+    void updateProduct(Long bucketId, Long productId, Integer count);
 }

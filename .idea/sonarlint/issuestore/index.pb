@@ -89,8 +89,6 @@ J
 shop.sql,a\3\a37305f493d206ffa622986874aec5de26f67520
 r
 Bsrc/main/java/ua/com/lviv/tc/controller/AddToBucketController.java,5\3\53ded7124f755ff5a95a9f273e5136bf267b4f69
-V
-&src/main/java/ua/com/lviv/tc/Main.java,0\c\0cc8c44f83c313860885a0f37edf699a63cbd3d1
 8
 shop.iml,9\3\936868cfff4d9e575a4505de73ec781074270942
 m
@@ -101,8 +99,7 @@ w
 Gsrc/main/java/ua/com/lviv/tc/controller/RemoveFromBucketController.java,3\a\3acd18839742e90aca35ee5abbb280c34c53ee6e
 J
 src/main/webapp/bucket.jsp,f\9\f91ddf8a6b0950216b5c45c5c8e1ecfb1e364bb2
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 f
 6src/main/java/ua/com/lviv/tc/entity/BucketProduct.java,b\8\b8c52d886cdbd1e12cf3a3892195b2f903cf6bd8
+k
+;src/main/java/ua/com/lviv/tc/config/DatabaseCreatorJPA.java,5\5\554874d7a3e3e83e85d0acf9585c32cf9340511d

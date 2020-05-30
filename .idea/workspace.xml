@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="25a9c77e-e280-4ff5-a652-970e2b375550" name="Default Changelist" comment="delete from test">
+    <list default="true" id="25a9c77e-e280-4ff5-a652-970e2b375550" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/config/DatabaseCreatorJPA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/config/EntityManagerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/11a3724cb8e43211b609c18eafd022377be7937b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/11a3724cb8e43211b609c18eafd022377be7937b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/451a4115292570b8281ac79216365613fec82423" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/451a4115292570b8281ac79216365613fec82423" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/462850454bcd4afaf14f40bf6c77afe3902977c7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/885bd0c4fdfae0b5daabe33ef285ec8906932372" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/885bd0c4fdfae0b5daabe33ef285ec8906932372" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/98ad69ff2a374a7fe741e17bb1554a5d8a468f53" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/98ad69ff2a374a7fe741e17bb1554a5d8a468f53" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad7531dbdff5f14e54c3b1b836068be2960b6e9f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad7531dbdff5f14e54c3b1b836068be2960b6e9f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af170f24bbfd32b7962684e8727b32e20b3648b5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af170f24bbfd32b7962684e8727b32e20b3648b5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1a5498e1c50727f0ce12e64ab62714f1af98530" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1a5498e1c50727f0ce12e64ab62714f1af98530" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df2ff92f443112fac00407c9263e0b8ca3fd693d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df2ff92f443112fac00407c9263e0b8ca3fd693d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e276438b6af6b388ac39e61d03b2ba7ced1a86b9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e276438b6af6b388ac39e61d03b2ba7ced1a86b9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e537a14788465a379cbe56661b21eeb4c61828aa" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e537a14788465a379cbe56661b21eeb4c61828aa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e56c89fadcbb62cf193e7ac5322d246f6075058a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e56c89fadcbb62cf193e7ac5322d246f6075058a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f89940ea8e60edce692d122250c87a998dd46768" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f89940ea8e60edce692d122250c87a998dd46768" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -21,101 +39,33 @@
       <change beforePath="$PROJECT_DIR$/rolling.out.1" beforeDir="false" afterPath="$PROJECT_DIR$/rolling.out.1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rolling.out.2" beforeDir="false" afterPath="$PROJECT_DIR$/rolling.out.2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rolling.out.3" beforeDir="false" afterPath="$PROJECT_DIR$/rolling.out.3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AddToBucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AddToBucketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AdminCreateProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AdminCreateProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AdminUpdateProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AdminUpdateProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/BucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/BucketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/CountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/CountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/LogOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/LogOutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/PersonalCabinetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/PersonalCabinetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/ProductListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/ProductListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/RemoveFromBucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/RemoveFromBucketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/Bucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/Bucket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/filter/AdminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/filter/AdminFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/filter/LoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/BucketRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/BucketRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/BucketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/BucketRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/ProductRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/UserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/BucketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/BucketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="shop@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="shop@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="shop@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="shop: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="shop@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="shop: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="bucket: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="shop@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="shop: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="bucket_product: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="shop@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="shop: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="product: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="shop@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="shop: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Tag Library Descriptor" />
-        <option value="JUnit5 Test Class" />
         <option value="CSS File" />
         <option value="Interface" />
         <option value="JavaScript File" />
         <option value="Jsp File" />
+        <option value="package.json" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -127,18 +77,10 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="F:\PC_Educate\Programming\java\shop\.idea" />
-      </set>
-    </option>
-  </component>
   <component name="ProjectId" id="1bDLTv1nLx0taEQDR5m3Sk5LYaw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -150,16 +92,20 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/image" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="ignore.preview.features.used" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../advanced" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ua.com.lviv.tc.repositories.impl" />
+      <recent name="ua.com.lviv.tc.config" />
       <recent name="ua.com.lviv.tc.service.impl" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -184,26 +130,13 @@
       <recent name="ua.com.lviv.tc.repositories.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.Main" />
+  <component name="RunManager" selected="JUnit.CustomTest.updateProject">
+    <configuration name="DatabaseCreatorJPA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.config.DatabaseCreatorJPA" />
       <module name="shop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ua.com.lviv.tc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.repositories.impl.Main" />
-      <module name="shop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ua.com.lviv.tc.repositories.impl.*" />
+          <option name="PATTERN" value="ua.com.lviv.tc.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -220,6 +153,63 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomTest.updateProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CustomTest" />
+      <option name="METHOD_NAME" value="updateProject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseCreatorJPATest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.com.lviv.tc.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.com.lviv.tc.config" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.config.DatabaseCreatorJPATest" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.com.lviv.tc.repositories.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.com.lviv.tc.repositories.impl" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.repositories.impl.ProductRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryImplTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.com.lviv.tc.repositories.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.com.lviv.tc.repositories.impl" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.repositories.impl.ProductRepositoryImplTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -274,37 +264,24 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/main/webapp/resources/javascript/test.js" working-dir="$PROJECT_DIR$/src/main/webapp/resources/javascript">
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.DatabaseCreatorJPA" />
+      <item itemvalue="JUnit.DatabaseCreatorJPATest.main" />
       <item itemvalue="Maven.Maven" />
       <item itemvalue="Maven.Clean" />
-      <item itemvalue="Node.js.test.js" />
+      <item itemvalue="JUnit.CustomTest.updateProject" />
+      <item itemvalue="JUnit.ProductRepositoryImplTest" />
+      <item itemvalue="JUnit.ProductRepositoryImplTest.findAll" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Node.js.test.js" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Node.js.test.js" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CustomTest.updateProject" />
+        <item itemvalue="JUnit.ProductRepositoryImplTest" />
+        <item itemvalue="JUnit.ProductRepositoryImplTest.findAll" />
+        <item itemvalue="Application.DatabaseCreatorJPA" />
+        <item itemvalue="JUnit.DatabaseCreatorJPATest.main" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -339,6 +316,9 @@
       <workItem from="1590867111281" duration="64000" />
       <workItem from="1590867187029" duration="1015000" />
       <workItem from="1590868215068" duration="382000" />
+      <workItem from="1590872326374" duration="184000" />
+      <workItem from="1590872525605" duration="1738000" />
+      <workItem from="1590874279300" duration="7925000" />
     </task>
     <task id="LOCAL-00001" summary="first add">
       <created>1588782790729</created>
@@ -407,20 +387,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first add" />
@@ -443,6 +422,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="765" y="197" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1588932362704" />
+    <state x="552" y="197" width="816" height="733" key="#Intentions" timestamp="1590875269805">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="197" width="816" height="733" key="#Intentions/0.0.1920.1080@0.0.1920.1080" timestamp="1590875269805" />
     <state x="936" y="197" key="#Project_Structure" timestamp="1588173846564">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -451,18 +434,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="197" key="#Template_Data_Languages/0.0.1920.1080@0.0.1920.1080" timestamp="1588957296762" />
-    <state x="309" y="176" width="1092" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590856650301">
+    <state x="309" y="176" width="1092" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590872697094">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="309" y="176" width="1092" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590856650301" />
+    <state x="309" y="176" width="1092" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590872697094" />
     <state x="724" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590855091867">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="724" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590855091867" />
-    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1590519457654">
+    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1590875287174">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590519457654" />
+    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590875287174" />
+    <state x="690" y="196" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1590873799841">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="196" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590873799841" />
+    <state x="690" y="210" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590873780237">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="210" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590873780237" />
     <state x="1258" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588163008656">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -487,26 +478,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="549" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1590868666646" />
-    <state x="561" y="242" key="FileChooserDialogImpl" timestamp="1590867497279">
+    <state x="561" y="242" key="FileChooserDialogImpl" timestamp="1590873693608">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="561" y="242" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1590867497279" />
-    <state width="1876" height="350" key="GridCell.Tab.0.bottom" timestamp="1590867955178">
+    <state x="561" y="242" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1590873693608" />
+    <state width="1876" height="445" key="GridCell.Tab.0.bottom" timestamp="1590882109770">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590867955178" />
-    <state width="1876" height="350" key="GridCell.Tab.0.center" timestamp="1590867955178">
+    <state width="1876" height="445" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590882109770" />
+    <state width="1876" height="445" key="GridCell.Tab.0.center" timestamp="1590882109770">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="350" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590867955178" />
-    <state width="1876" height="350" key="GridCell.Tab.0.left" timestamp="1590867955177">
+    <state width="1876" height="445" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590882109770" />
+    <state width="1876" height="445" key="GridCell.Tab.0.left" timestamp="1590882109770">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="350" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590867955177" />
-    <state width="1876" height="350" key="GridCell.Tab.0.right" timestamp="1590867955178">
+    <state width="1876" height="445" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590882109770" />
+    <state width="1876" height="445" key="GridCell.Tab.0.right" timestamp="1590882109770">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="350" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590867955178" />
+    <state width="1876" height="445" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590882109770" />
     <state width="1878" height="327" key="GridCell.Tab.1.bottom" timestamp="1590530519167">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -523,26 +514,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="327" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590530519167" />
-    <state x="874" y="194" key="Maven.ArtifactSearchDialog" timestamp="1589375808991">
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1590872543500">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="874" y="194" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1589375808991" />
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1080@0.0.1920.1080" timestamp="1590872543500" />
+    <state x="874" y="194" key="Maven.ArtifactSearchDialog" timestamp="1590881816765">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="874" y="194" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590881816765" />
     <state x="751" y="250" key="RollbackChangesDialog" timestamp="1590854874600">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="751" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590854874600" />
-    <state x="229" y="161" width="1271" height="738" key="SettingsEditor" timestamp="1590868596024">
+    <state x="209" y="244" width="1278" height="738" key="SettingsEditor" timestamp="1590877706845">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="229" y="161" width="1271" height="738" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1590868596024" />
+    <state x="209" y="244" width="1278" height="738" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1590877706845" />
     <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590854954484">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590854954484" />
-    <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588285171325">
+    <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590878300816">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588285171325" />
+    <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590878300816" />
     <state x="650" y="241" key="new project wizard" timestamp="1589281434572">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -555,10 +550,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1096" y="245" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588281476206" />
-    <state x="1103" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1590868637978">
+    <state x="1103" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1590874255266">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1103" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1590868637978" />
+    <state x="1103" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1590874255266" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -19,11 +19,11 @@ public class User {
     @NotNull
     private Long id;
 
-    @Column(name = "first_name")
+    @Column(name = "fname")
     @NotNull
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column(name = "lname")
     @NotNull
     private String lastName;
 
@@ -35,7 +35,7 @@ public class User {
     @NotNull
     private String role;
 
-    @Column(name = "email")
+    @Column(name = "email", unique = true, length = 30)
     @NotNull
     private String email;
 

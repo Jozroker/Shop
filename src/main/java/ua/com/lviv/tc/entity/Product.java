@@ -21,11 +21,12 @@ public class Product implements Comparable<Product> {
     @NotNull
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "name", unique = true, length = 30)
     @NotNull
     private String name;
 
     @Column(name = "description")
+    @Lob
     private String description;
 
     @Column(name = "price")

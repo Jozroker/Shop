@@ -1,48 +1,30 @@
-2020-05-30 22:45:44 INFO  HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/jpa_shop?serverTimezone=UTC]
-2020-05-30 22:45:44 INFO  HHH10001001: Connection properties: {user=root, password=root}
-2020-05-30 22:45:44 INFO  HHH10001003: Autocommit mode: false
-2020-05-30 22:45:44 DEBUG Initializing Connection pool with 1 Connections
-2020-05-30 22:45:44 INFO  HHH000115: Hibernate connection pool size: 20 (min=1)
-2020-05-30 22:45:44 WARN  HHH000342: Could not obtain connection to query metadata : null
-2020-05-30 22:45:44 INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-05-30 22:45:44 DEBUG IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2020-05-30 22:45:44 DEBUG HHH000422: Disabling contextual LOB creation as connection was null
-2020-05-30 22:45:44 DEBUG Error calling Driver#connect [null]
-java.sql.SQLSyntaxErrorException: Unknown database 'jpa_shop'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
-	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:38)
-	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:58)
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections(DriverManagerConnectionProviderImpl.java:331)
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:250)
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:228)
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build(DriverManagerConnectionProviderImpl.java:369)
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:98)
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:73)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:107)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:145)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
-	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1214)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1245)
-	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
-	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
-	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
-	at ua.com.lviv.tc.Main.main(Main.java:10)
+2020-05-31 01:53:05 DEBUG Static select for entity ua.com.lviv.tc.entity.User [NONE]: select user0_.id as id1_3_0_, user0_.bucket_id as bucket_i7_3_0_, user0_.email as email2_3_0_, user0_.fname as fname3_3_0_, user0_.lname as lname4_3_0_, user0_.password as password5_3_0_, user0_.role as role6_3_0_, bucket1_.id as id1_0_1_, bucket1_.purchase_date as purchase2_0_1_ from user user0_ left outer join bucket bucket1_ on user0_.bucket_id=bucket1_.id where user0_.id=?
+2020-05-31 01:53:05 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7b2a3ff8]
+2020-05-31 01:53:05 DEBUG Visiting attribute path : bucket
+2020-05-31 01:53:05 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@460b6d54]
+2020-05-31 01:53:05 DEBUG Visiting attribute path : bucket.purchaseDate
+2020-05-31 01:53:05 DEBUG Visiting attribute path : email
+2020-05-31 01:53:05 DEBUG Visiting attribute path : firstName
+2020-05-31 01:53:05 DEBUG Visiting attribute path : lastName
+2020-05-31 01:53:05 DEBUG Visiting attribute path : password
+2020-05-31 01:53:05 DEBUG Visiting attribute path : role
+2020-05-31 01:53:05 DEBUG Building LoadPlan...
+2020-05-31 01:53:05 DEBUG processing queryspace <gen:0>
+2020-05-31 01:53:05 DEBUG LoadPlan(entity=ua.com.lviv.tc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.com.lviv.tc.entity.User, querySpaceUid=<gen:0>, path=ua.com.lviv.tc.entity.User)
+          - EntityAttributeFetchImpl(entity=ua.com.lviv.tc.entity.Bucket, querySpaceUid=<gen:1>, path=ua.com.lviv.tc.entity.User.bucket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.com.lviv.tc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(bucket)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ua.com.lviv.tc.entity.Bucket)
+                - SQL table alias mapping - bucket1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+2020-05-31 01:53:05 DEBUG Static select for entity ua.com.lviv.tc.entity.User [READ]: select user0_.id as id1_3_0_, user0_.bucket_id as bucket_i7_3_0_, user0_.email as email2_3_0_, user0_.fname as fname3_3_0_, user0_.lname as lname4_3_0_, user0_.password as password5_3_0_, user0_.role as role6_3_0_, bucket1_.id as id1_0_1_, bucket1_.purchase_date as purchase2_0_1_ from user user0_ left outer join bucket bucket1_ on user0_.bucket_id=bucket1_.id where user0_.id=?
+2020-05-31 01:53:05 DEBUG Static select for action ACTION_MERGE on entity ua.com.lviv.tc.entity.User: select user0_.id as id1_3_0_, user0_.bucket_id as bucket_i7_3_0_, user0_.email as email2_3_0_, user0_.fname as fname3_3_0_, user0_.lname as lname4_3_0_, user0_.password as password5_3_0_, user0_.role as role6_3_0_ from user user0_ where user0_.id=?
+2020-05-31 01:53:05 DEBUG Static select for action ACTION_REFRESH on entity ua.com.lviv.tc.entity.User: select user0_.id as id1_3_0_, user0_.bucket_id as bucket_i7_3_0_, user0_.email as email2_3_0_, user0_.fname as fname3_3_0_, user0_.lname as lname4_3_0_, user0_.password as password5_3_0_, user0_.role as role6_3_0_ from user user0_ where user0_.id=?

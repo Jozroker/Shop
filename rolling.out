@@ -1,2 +1,29 @@
-2020-05-30 22:45:44 WARN  SQL Error: 1049, SQLState: 42000
-2020-05-30 22:45:44 ERROR Unknown database 'jpa_shop'
+2020-05-31 01:53:05 INFO  HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@25a73de1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-05-31 01:53:05 DEBUG No JtaPlatform was specified, checking resolver
+2020-05-31 01:53:05 DEBUG No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2020-05-31 01:53:05 DEBUG Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-31 01:53:05 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-31 01:53:05 DEBUG Checking 0 named HQL queries
+2020-05-31 01:53:05 DEBUG Checking 0 named SQL queries
+2020-05-31 01:53:05 DEBUG Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@49798e84
+2020-05-31 01:53:05 DEBUG Registering SessionFactory: 804d58c3-a89e-40ba-8527-7ca839063f67 (<unnamed>)
+2020-05-31 01:53:05 DEBUG Not binding SessionFactory to JNDI, no JNDI name configured
+2020-05-31 01:53:05 DEBUG Statistics initialized [enabled=false]
+2020-05-31 01:53:05 DEBUG On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-05-31 01:53:05 DEBUG select product0_.id as id1_2_0_, product0_.count as count2_2_0_, product0_.description as descript3_2_0_, product0_.name as name4_2_0_, product0_.price as price5_2_0_ from product product0_ where product0_.id=?
+2020-05-31 01:53:05 DEBUG Done entity load : ua.com.lviv.tc.entity.Product#123
+2020-05-31 01:53:05 DEBUG Initiating JDBC connection release from afterTransaction
+2020-05-31 01:53:05 DEBUG begin
+2020-05-31 01:53:05 DEBUG Executing identity-insert immediately
+2020-05-31 01:53:05 DEBUG insert into product (count, description, name, price) values (?, ?, ?, ?)
+2020-05-31 01:53:05 DEBUG Natively generated identity: 4
+2020-05-31 01:53:05 DEBUG HHH000387: ResultSet's statement was not registered
+2020-05-31 01:53:05 DEBUG committing
+2020-05-31 01:53:05 DEBUG Processing flush-time cascades
+2020-05-31 01:53:05 DEBUG Dirty checking collections
+2020-05-31 01:53:05 DEBUG Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2020-05-31 01:53:05 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2020-05-31 01:53:05 DEBUG Listing entities:
+2020-05-31 01:53:05 DEBUG ua.com.lviv.tc.entity.Product{price=100, count=3, name=testproduct2, description=testdesc, id=4}
+2020-05-31 01:53:05 DEBUG Initiating JDBC connection release from afterTransaction
+2020-05-31 01:53:05 DEBUG Initiating JDBC connection release from afterTransaction

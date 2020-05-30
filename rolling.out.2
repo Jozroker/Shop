@@ -1,25 +1,48 @@
-2020-05-30 22:45:43 DEBUG Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5af3afd9
-2020-05-30 22:45:43 DEBUG Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@323b36e0
-2020-05-30 22:45:43 DEBUG Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@44ebcd03
-2020-05-30 22:45:43 DEBUG Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@694abbdc
-2020-05-30 22:45:43 DEBUG Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2e005c4b
-2020-05-30 22:45:43 DEBUG Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4567f35d
-2020-05-30 22:45:43 DEBUG Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@436813f3] into BootstrapContext; was [null]
-2020-05-30 22:45:43 DEBUG Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@74fe5c40] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@3febb011]
-2020-05-30 22:45:43 DEBUG Injecting JPA temp ClassLoader [null] into BootstrapContext; was [null]
-2020-05-30 22:45:43 DEBUG ClassLoaderAccessImpl#injectTempClassLoader(null) [was null]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
-2020-05-30 22:45:44 DEBUG Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
-2020-05-30 22:45:44 WARN  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-05-31 01:53:05 DEBUG Visiting attribute path : purchaseDate
+2020-05-31 01:53:05 DEBUG Building LoadPlan...
+2020-05-31 01:53:05 DEBUG processing queryspace <gen:0>
+2020-05-31 01:53:05 DEBUG LoadPlan(entity=ua.com.lviv.tc.entity.Bucket)
+    - Returns
+       - EntityReturnImpl(entity=ua.com.lviv.tc.entity.Bucket, querySpaceUid=<gen:0>, path=ua.com.lviv.tc.entity.Bucket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.com.lviv.tc.entity.Bucket)
+          - SQL table alias mapping - bucket0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2020-05-31 01:53:05 DEBUG Static select for entity ua.com.lviv.tc.entity.Bucket [READ]: select bucket0_.id as id1_0_0_, bucket0_.purchase_date as purchase2_0_0_ from bucket bucket0_ where bucket0_.id=?
+2020-05-31 01:53:05 DEBUG Static select for action ACTION_MERGE on entity ua.com.lviv.tc.entity.Bucket: select bucket0_.id as id1_0_0_, bucket0_.purchase_date as purchase2_0_0_ from bucket bucket0_ where bucket0_.id=?
+2020-05-31 01:53:05 DEBUG Static select for action ACTION_REFRESH on entity ua.com.lviv.tc.entity.Bucket: select bucket0_.id as id1_0_0_, bucket0_.purchase_date as purchase2_0_0_ from bucket bucket0_ where bucket0_.id=?
+2020-05-31 01:53:05 DEBUG Static SQL for entity: ua.com.lviv.tc.entity.User
+2020-05-31 01:53:05 DEBUG  Version select: select id from user where id =?
+2020-05-31 01:53:05 DEBUG  Snapshot select: select user_.id, user_.bucket_id as bucket_i7_3_, user_.email as email2_3_, user_.fname as fname3_3_, user_.lname as lname4_3_, user_.password as password5_3_, user_.role as role6_3_ from user user_ where user_.id=?
+2020-05-31 01:53:05 DEBUG  Insert 0: insert into user (bucket_id, email, fname, lname, password, role, id) values (?, ?, ?, ?, ?, ?, ?)
+2020-05-31 01:53:05 DEBUG  Update 0: update user set bucket_id=?, email=?, fname=?, lname=?, password=?, role=? where id=?
+2020-05-31 01:53:05 DEBUG  Delete 0: delete from user where id=?
+2020-05-31 01:53:05 DEBUG  Identity insert: insert into user (bucket_id, email, fname, lname, password, role) values (?, ?, ?, ?, ?, ?)
+2020-05-31 01:53:05 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6b587673]
+2020-05-31 01:53:05 DEBUG Visiting attribute path : bucket
+2020-05-31 01:53:05 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5f404594]
+2020-05-31 01:53:05 DEBUG Visiting attribute path : bucket.purchaseDate
+2020-05-31 01:53:05 DEBUG Visiting attribute path : email
+2020-05-31 01:53:05 DEBUG Visiting attribute path : firstName
+2020-05-31 01:53:05 DEBUG Visiting attribute path : lastName
+2020-05-31 01:53:05 DEBUG Visiting attribute path : password
+2020-05-31 01:53:05 DEBUG Visiting attribute path : role
+2020-05-31 01:53:05 DEBUG Building LoadPlan...
+2020-05-31 01:53:05 DEBUG processing queryspace <gen:0>
+2020-05-31 01:53:05 DEBUG LoadPlan(entity=ua.com.lviv.tc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.com.lviv.tc.entity.User, querySpaceUid=<gen:0>, path=ua.com.lviv.tc.entity.User)
+          - EntityAttributeFetchImpl(entity=ua.com.lviv.tc.entity.Bucket, querySpaceUid=<gen:1>, path=ua.com.lviv.tc.entity.User.bucket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.com.lviv.tc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(bucket)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ua.com.lviv.tc.entity.Bucket)
+                - SQL table alias mapping - bucket1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
