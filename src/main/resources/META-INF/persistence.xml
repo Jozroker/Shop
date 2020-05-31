@@ -5,14 +5,14 @@
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 
     <persistence-unit name="validateUnit" transaction-type="RESOURCE_LOCAL">
-<!--        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
+        <!--        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
         <class>ua.com.lviv.tc.entity.Product</class>
         <class>ua.com.lviv.tc.entity.User</class>
         <class>ua.com.lviv.tc.entity.Bucket</class>
         <class>ua.com.lviv.tc.entity.BucketProduct</class>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
-<!--            <property name="hibernate.archive.autodetection" value="class, hbm"/>-->
+            <!--            <property name="hibernate.archive.autodetection" value="class, hbm"/>-->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa_shop?serverTimezone=UTC"/>

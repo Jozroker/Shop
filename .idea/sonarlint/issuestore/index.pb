@@ -107,5 +107,3 @@ M
 src/main/test/CustomTest.java,2\c\2c77a05dc34494bd34822204c45a43f3257e8b73
 W
 'target/classes/META-INF/persistence.xml,6\b\6b218a32634615b1febcb25205c6f5e1216f1034
-[
-+src/main/resources/META-INF/persistence.xml,3\b\3be4f79b5828b3982f3f6a62bf8fc67b3adedf58

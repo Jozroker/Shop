@@ -18,7 +18,6 @@ import java.util.Optional;
         @NamedQuery(name = "findAll", query = "select p from Product p"),
         @NamedQuery(name = "deleteById", query = "delete from Product p where p.id = ?1")
 })
-@EntityScan("ua.com.lviv.tc.entity")
 public class ProductRepositoryImpl implements ProductRepository {
 
     private static ProductRepositoryImpl instance;
@@ -44,6 +43,7 @@ public class ProductRepositoryImpl implements ProductRepository {
 
     @Override
     public void update(Product product) {
+        em.getTransaction().begin();
         TypedQuery<Product> query = em.createNamedQuery("update", Product.class);
         query.setParameter(1, product.getCount());
         query.setParameter(2, product.getDescription());
@@ -51,24 +51,29 @@ public class ProductRepositoryImpl implements ProductRepository {
         query.setParameter(4, product.getPrice());
         query.setParameter(5, product.getId());
         query.executeUpdate();
+        em.getTransaction().commit();
     }
 
 
     @Override
     public List<Product> findAll() {
+        em.getTransaction().begin();
         TypedQuery<Product> query = em.createNamedQuery("findAll", Product.class);
         return query.getResultList();
     }
 
     @Override
     public Optional<Product> findById(Long id) {
+        em.getTransaction().begin();
         return Optional.ofNullable(em.find(Product.class, id));
     }
 
     @Override
     public void deleteById(Long id) {
+        em.getTransaction().begin();
         TypedQuery<Product> query = em.createNamedQuery("deleteById", Product.class);
         query.setParameter(1, id);
         query.executeUpdate();
+        em.getTransaction().commit();
     }
 }

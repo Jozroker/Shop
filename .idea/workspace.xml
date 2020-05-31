@@ -19,7 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25a9c77e-e280-4ff5-a652-970e2b375550" name="Default Changelist" comment="" />
+    <list default="true" id="25a9c77e-e280-4ff5-a652-970e2b375550" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/ProductRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/CustomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/CustomTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/repositories/impl/ProductRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/repositories/impl/ProductRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CustomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CustomTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,11 +78,11 @@
     <property name="ignore.preview.features.used" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../advanced" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -431,6 +442,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="936" y="197" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1588173846564" />
+    <state x="349" y="380" key="#SQL_Dialects" timestamp="1590883129704">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="349" y="380" key="#SQL_Dialects/0.0.1920.1080@0.0.1920.1080" timestamp="1590883129704" />
     <state x="552" y="197" key="#Template_Data_Languages" timestamp="1588957296762">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -455,6 +470,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="210" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590873780237" />
+    <state x="556" y="536" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1590885397230">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="556" y="536" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1920.1080@0.0.1920.1080" timestamp="1590885397230" />
     <state x="1258" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588163008656">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -483,22 +502,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="561" y="242" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1590873693608" />
-    <state width="1876" height="445" key="GridCell.Tab.0.bottom" timestamp="1590882812351">
+    <state width="1876" height="443" key="GridCell.Tab.0.bottom" timestamp="1590885381858">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="445" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590882812351" />
-    <state width="1876" height="445" key="GridCell.Tab.0.center" timestamp="1590882812351">
+    <state width="1876" height="443" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590885381858" />
+    <state width="1876" height="443" key="GridCell.Tab.0.center" timestamp="1590885381858">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="445" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590882812351" />
-    <state width="1876" height="445" key="GridCell.Tab.0.left" timestamp="1590882812351">
+    <state width="1876" height="443" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590885381858" />
+    <state width="1876" height="443" key="GridCell.Tab.0.left" timestamp="1590885381858">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="445" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590882812351" />
-    <state width="1876" height="445" key="GridCell.Tab.0.right" timestamp="1590882812351">
+    <state width="1876" height="443" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590885381858" />
+    <state width="1876" height="443" key="GridCell.Tab.0.right" timestamp="1590885381858">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="445" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590882812351" />
+    <state width="1876" height="443" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590885381858" />
     <state width="1878" height="327" key="GridCell.Tab.1.bottom" timestamp="1590530519167">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -527,10 +546,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="751" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590854874600" />
-    <state x="209" y="244" width="1278" height="738" key="SettingsEditor" timestamp="1590877706845">
+    <state x="209" y="244" width="1278" height="738" key="SettingsEditor" timestamp="1590885410617">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="209" y="244" width="1278" height="738" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1590877706845" />
+    <state x="209" y="244" width="1278" height="738" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1590885410617" />
     <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590882729516">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
