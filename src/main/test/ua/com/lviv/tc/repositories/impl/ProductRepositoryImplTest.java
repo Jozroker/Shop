@@ -1,9 +1,6 @@
 package ua.com.lviv.tc.repositories.impl;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import ua.com.lviv.tc.config.EntityManagerClass;
 import ua.com.lviv.tc.entity.Product;
 import ua.com.lviv.tc.repositories.ProductRepository;
@@ -14,16 +11,16 @@ import java.math.BigDecimal;
 
 class ProductRepositoryImplTest {
 
-    EntityManager em = EntityManagerClass.getInstance();
+    static EntityManager em = EntityManagerClass.getInstance();
     static ProductRepository pr = ProductRepositoryImpl.getInstance();
     private static Product product = new Product("testproduct", "testdesc", new BigDecimal(100),
             3);
 
-    @BeforeEach
-    void clean() {
+    @BeforeAll
+    static void create() {
         String request = "delete from Product";
         em.getTransaction().begin();
-        Query query = em.createNamedQuery(request, Product.class);
+        Query query = em.createQuery(request);
         query.executeUpdate();
         em.getTransaction().commit();
     }
@@ -31,7 +28,7 @@ class ProductRepositoryImplTest {
     @Test
     @Order(1)
     void save() {
-        pr.save(product);
+        product = pr.save(product);
     }
 
     @Test
@@ -51,7 +48,7 @@ class ProductRepositoryImplTest {
     @Test
     @Order(4)
     void findById() {
-        System.out.println(pr.findById(123L));
+//        System.out.println(pr.findById(123L));
         System.out.println(pr.findById(product.getId()));
     }
 

@@ -10,9 +10,17 @@ import java.util.Comparator;
 @Entity
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "product")
+@NamedQueries({
+        @NamedQuery(name = "updateProduct", query = "update Product p set p.count = ?1, p" +
+                ".description = " +
+                "?2, p.name = ?3, p.price = ?4 where p.id = ?5"),
+        @NamedQuery(name = "findAllProducts", query = "select p from Product p"),
+        @NamedQuery(name = "deleteProductById", query = "delete from Product p where p.id = ?1")
+})
 public class Product implements Comparable<Product> {
 
     @Id

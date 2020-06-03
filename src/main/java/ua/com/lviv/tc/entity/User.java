@@ -8,9 +8,16 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "user")
+//@NamedQueries({
+//        @NamedQuery(name = "update", query = "update User u set u.email = ?1, u.firstName = " +
+//                "?2, u.lastName = ?3, u.password = ?4, u.role = ?5 where u.id = ?6"),
+//        @NamedQuery(name = "findAll", query = "select u from User u"),
+//        @NamedQuery(name = "deleteById", query = "delete from User u where u.id = ?1")
+//})
 public class User {
 
     @Id

@@ -1,3 +1,11 @@
 
-^
-java:S1710"<Remove the 'NamedQueries' wrapper from this annotation group(¨‘¯¼ûÿÿÿÿ8åØÀ¿¦.
+X	java:S125/"<This block of commented-out lines of code should be removed.(ı¹ü8¹ÜØ§.
+X	java:S125"<This block of commented-out lines of code should be removed.(ğÕœ¿8°×¬‚§.
+X	java:S1255"<This block of commented-out lines of code should be removed.(ğÕœ¿8üÁÙ§.
+X	java:S125<"<This block of commented-out lines of code should be removed.(ğÕœ¿8ÛÔÙ§.
+X	java:S125F"<This block of commented-out lines of code should be removed.(ı¹ü8ÒõÙ§.
+w
+java:S1128"URemove this unused import 'org.springframework.boot.autoconfigure.domain.EntityScan'.(æ³±üÿÿÿÿ8ÑÏ¢À¦.
+X	java:S125'"<This block of commented-out lines of code should be removed.(ğÕœ¿8éğØ§.
+X	java:S125 "<This block of commented-out lines of code should be removed.(ı¹ü8Ã«±‚§.
+X	java:S125B"<This block of commented-out lines of code should be removed.(ğÕœ¿8ÒõÙ§.
