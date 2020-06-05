@@ -20,27 +20,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25a9c77e-e280-4ff5-a652-970e2b375550" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/BucketRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/UserRepositoryImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/11a3724cb8e43211b609c18eafd022377be7937b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/11a3724cb8e43211b609c18eafd022377be7937b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/451a4115292570b8281ac79216365613fec82423" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/451a4115292570b8281ac79216365613fec82423" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/885bd0c4fdfae0b5daabe33ef285ec8906932372" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/885bd0c4fdfae0b5daabe33ef285ec8906932372" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/98ad69ff2a374a7fe741e17bb1554a5d8a468f53" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/98ad69ff2a374a7fe741e17bb1554a5d8a468f53" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad7531dbdff5f14e54c3b1b836068be2960b6e9f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad7531dbdff5f14e54c3b1b836068be2960b6e9f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e276438b6af6b388ac39e61d03b2ba7ced1a86b9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e276438b6af6b388ac39e61d03b2ba7ced1a86b9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AddToBucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AddToBucketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AdminCreateProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AdminCreateProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AdminUpdateProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/AdminUpdateProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/BucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/BucketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/CountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/CountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/LogOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/LogOutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/PersonalCabinetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/PersonalCabinetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/ProductListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/ProductListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/RemoveFromBucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/RemoveFromBucketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/filter/AdminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/filter/AdminFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/filter/LoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/Bucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/Bucket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/BucketProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/BucketProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/BucketRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/BucketRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/ProductRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/repositories/impl/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/BucketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/BucketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/BucketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/BucketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/test/CustomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/CustomTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/entity/Bucket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/entity/Bucket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/entity/BucketProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/entity/BucketProduct.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/entity/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/repositories/impl/ProductRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/repositories/impl/ProductRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CustomTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/service/BucketService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/service/BucketService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/com/lviv/tc/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,13 +112,13 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="ignore.preview.features.used" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project_KH_32" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vasylsite" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -111,6 +136,7 @@
       <recent name="F:\PC_Educate\Programming\java\shop\src\main\webapp\WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ua.com.lviv.tc.repositories" />
       <recent name="ua.com.lviv.tc.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -123,13 +149,31 @@
       <recent name="ua.com.lviv.tc.repositories.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductRepositoryImplTest">
-    <configuration name="CustomTest.updateProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Maven.Maven">
+    <configuration name="DatabaseCreatorJPA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.config.DatabaseCreatorJPA" />
       <module name="shop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CustomTest" />
-      <option name="METHOD_NAME" value="updateProject" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.com.lviv.tc.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BucketRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.com.lviv.tc.repositories.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.com.lviv.tc.repositories.impl" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.repositories.impl.BucketRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,7 +193,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductRepositoryImplTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shop" />
       <extension name="coverage">
         <pattern>
@@ -158,14 +202,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ua.com.lviv.tc.repositories.impl" />
-      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.repositories.impl.ProductRepositoryImplTest" />
-      <option name="METHOD_NAME" value="findAll" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.repositories.impl.UserRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductRepositoryImplTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryImplTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shop" />
       <extension name="coverage">
         <pattern>
@@ -174,24 +217,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ua.com.lviv.tc.repositories.impl" />
-      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.repositories.impl.ProductRepositoryImplTest" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.repositories.impl.UserRepositoryImplTest" />
       <option name="METHOD_NAME" value="save" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductRepositoryImplTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ua.com.lviv.tc.repositories.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ua.com.lviv.tc.repositories.impl" />
-      <option name="MAIN_CLASS_NAME" value="ua.com.lviv.tc.repositories.impl.ProductRepositoryImplTest" />
-      <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -248,21 +275,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.CustomTest.updateProject" />
+      <item itemvalue="JUnit.BucketRepositoryImplTest" />
       <item itemvalue="JUnit.ProductRepositoryImplTest" />
-      <item itemvalue="JUnit.ProductRepositoryImplTest.findAll" />
-      <item itemvalue="JUnit.ProductRepositoryImplTest.save" />
-      <item itemvalue="JUnit.ProductRepositoryImplTest.update" />
       <item itemvalue="Maven.Maven" />
       <item itemvalue="Maven.Clean" />
+      <item itemvalue="JUnit.UserRepositoryImplTest" />
+      <item itemvalue="JUnit.UserRepositoryImplTest.save" />
+      <item itemvalue="Application.DatabaseCreatorJPA" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DatabaseCreatorJPA" />
+        <item itemvalue="JUnit.UserRepositoryImplTest" />
+        <item itemvalue="JUnit.UserRepositoryImplTest.save" />
+        <item itemvalue="JUnit.BucketRepositoryImplTest" />
         <item itemvalue="JUnit.ProductRepositoryImplTest" />
-        <item itemvalue="JUnit.ProductRepositoryImplTest.save" />
-        <item itemvalue="JUnit.ProductRepositoryImplTest.update" />
-        <item itemvalue="JUnit.CustomTest.updateProject" />
-        <item itemvalue="JUnit.ProductRepositoryImplTest.findAll" />
       </list>
     </recent_temporary>
   </component>
@@ -305,6 +332,7 @@
       <workItem from="1590928878586" duration="610000" />
       <workItem from="1591007225714" duration="9397000" />
       <workItem from="1591031709161" duration="439000" />
+      <workItem from="1591309004856" duration="7608000" />
     </task>
     <task id="LOCAL-00001" summary="first add">
       <created>1588782790729</created>
@@ -456,10 +484,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="936" y="197" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1588173846564" />
-    <state x="349" y="380" key="#SQL_Dialects" timestamp="1590883129704">
+    <state x="349" y="380" key="#SQL_Dialects" timestamp="1591293926026">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="349" y="380" key="#SQL_Dialects/0.0.1920.1080@0.0.1920.1080" timestamp="1590883129704" />
+    <state x="349" y="380" key="#SQL_Dialects/0.0.1920.1080@0.0.1920.1080" timestamp="1591293926026" />
     <state x="552" y="197" key="#Template_Data_Languages" timestamp="1588957296762">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -472,10 +500,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="724" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590855091867" />
-    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1590875287174">
+    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1591307861834">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590875287174" />
+    <state x="1245" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1591307861834" />
     <state x="690" y="196" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1590873799841">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -500,10 +528,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590855238390" />
-    <state x="454" y="213" width="955" height="593" key="#xdebugger.evaluate" timestamp="1590529730676">
+    <state x="454" y="213" width="955" height="593" key="#xdebugger.evaluate" timestamp="1591313057015">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="454" y="213" width="955" height="593" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1590529730676" />
+    <state x="454" y="213" width="955" height="593" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1591313057015" />
     <state x="918" y="387" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588936918345">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -512,42 +540,42 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="549" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1590885532113" />
-    <state x="561" y="242" key="FileChooserDialogImpl" timestamp="1591031711817">
+    <state x="561" y="242" key="FileChooserDialogImpl" timestamp="1591308640313">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="561" y="242" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591031711817" />
-    <state width="1876" height="358" key="GridCell.Tab.0.bottom" timestamp="1591028727265">
+    <state x="561" y="242" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591308640313" />
+    <state width="1876" height="497" key="GridCell.Tab.0.bottom" timestamp="1591359908317">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="358" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591028727265" />
-    <state width="1876" height="358" key="GridCell.Tab.0.center" timestamp="1591028727265">
+    <state width="1876" height="497" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591359908317" />
+    <state width="1876" height="497" key="GridCell.Tab.0.center" timestamp="1591359908317">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="358" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591028727265" />
-    <state width="1876" height="358" key="GridCell.Tab.0.left" timestamp="1591028727265">
+    <state width="1876" height="497" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591359908317" />
+    <state width="1876" height="497" key="GridCell.Tab.0.left" timestamp="1591359908317">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="358" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591028727265" />
-    <state width="1876" height="358" key="GridCell.Tab.0.right" timestamp="1591028727265">
+    <state width="1876" height="497" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591359908317" />
+    <state width="1876" height="497" key="GridCell.Tab.0.right" timestamp="1591359908317">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="358" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591028727265" />
-    <state width="1876" height="358" key="GridCell.Tab.1.bottom" timestamp="1591028727265">
+    <state width="1876" height="497" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591359908317" />
+    <state width="1876" height="357" key="GridCell.Tab.1.bottom" timestamp="1591352549244">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="358" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591028727265" />
-    <state width="1876" height="358" key="GridCell.Tab.1.center" timestamp="1591028727265">
+    <state width="1876" height="357" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591352549244" />
+    <state width="1876" height="357" key="GridCell.Tab.1.center" timestamp="1591352549244">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="358" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591028727265" />
-    <state width="1876" height="358" key="GridCell.Tab.1.left" timestamp="1591028727265">
+    <state width="1876" height="357" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591352549244" />
+    <state width="1876" height="357" key="GridCell.Tab.1.left" timestamp="1591352549244">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="358" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591028727265" />
-    <state width="1876" height="358" key="GridCell.Tab.1.right" timestamp="1591028727265">
+    <state width="1876" height="357" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591352549244" />
+    <state width="1876" height="357" key="GridCell.Tab.1.right" timestamp="1591352549244">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="358" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591028727265" />
+    <state width="1876" height="357" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591352549244" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1590872543500">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -560,10 +588,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="751" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590854874600" />
-    <state x="209" y="244" width="1278" height="738" key="SettingsEditor" timestamp="1590885410617">
+    <state x="209" y="244" width="1278" height="738" key="SettingsEditor" timestamp="1591276629528">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="209" y="244" width="1278" height="738" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1590885410617" />
+    <state x="209" y="244" width="1278" height="738" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591276629528" />
+    <state width="543" height="548" key="SwitcherDM" timestamp="1591302675894">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="543" height="548" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1591302675894" />
     <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590885536969">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -572,10 +604,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590885464717" />
-    <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590878300816">
+    <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591311115300">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590878300816" />
+    <state x="731" y="242" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591311115300" />
     <state x="650" y="241" key="new project wizard" timestamp="1589281434572">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -597,43 +629,21 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/com/lviv/tc/controller/PersonalCabinetController.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/BucketRepositoryImplTest.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java</url>
-          <line>49</line>
-          <properties class="ua.com.lviv.tc.repositories.impl.ProductRepositoryImplTest" method="findById">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java</url>
-          <line>29</line>
-          <properties class="ua.com.lviv.tc.repositories.impl.ProductRepositoryImplTest" method="save">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java</url>
-          <line>35</line>
-          <properties class="ua.com.lviv.tc.repositories.impl.ProductRepositoryImplTest" method="update">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java</url>
-          <line>43</line>
-          <properties class="ua.com.lviv.tc.repositories.impl.ProductRepositoryImplTest" method="findAll">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="14" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/test/ua/com/lviv/tc/repositories/impl/UserRepositoryImplTest.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="Date.from(bucket.getPurchaseDate()).getCalendarDate().minutes" language="JAVA" custom="java.time.LocalDate,java.sql.Date" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

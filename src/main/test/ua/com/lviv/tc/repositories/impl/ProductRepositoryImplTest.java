@@ -9,6 +9,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.math.BigDecimal;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class ProductRepositoryImplTest {
 
     static EntityManager em = EntityManagerClass.getInstance();

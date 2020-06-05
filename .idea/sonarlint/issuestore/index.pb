@@ -95,15 +95,17 @@ w
 Gsrc/main/java/ua/com/lviv/tc/controller/RemoveFromBucketController.java,3\a\3acd18839742e90aca35ee5abbb280c34c53ee6e
 J
 src/main/webapp/bucket.jsp,f\9\f91ddf8a6b0950216b5c45c5c8e1ecfb1e364bb2
-f
-6src/main/java/ua/com/lviv/tc/entity/BucketProduct.java,b\8\b8c52d886cdbd1e12cf3a3892195b2f903cf6bd8
 k
 ;src/main/java/ua/com/lviv/tc/config/DatabaseCreatorJPA.java,5\5\554874d7a3e3e83e85d0acf9585c32cf9340511d
-k
-;src/main/java/ua/com/lviv/tc/config/EntityManagerClass.java,8\a\8ab3c89bb18bf51f286f49fd278037144892d1ae
-}
-Msrc/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java,b\7\b7f6d0656b4bfc8623aea6884829f0faf63d3230
 M
 src/main/test/CustomTest.java,2\c\2c77a05dc34494bd34822204c45a43f3257e8b73
-W
-'target/classes/META-INF/persistence.xml,6\b\6b218a32634615b1febcb25205c6f5e1216f1034
+]
+-src/main/java/ua/com/lviv/tc/config/Main.java,7\7\77539f46495cbac2f55d4b367b60a9990592003a
+k
+;src/main/java/ua/com/lviv/tc/config/EntityManagerClass.java,8\a\8ab3c89bb18bf51f286f49fd278037144892d1ae
+f
+6src/main/java/ua/com/lviv/tc/entity/BucketProduct.java,b\8\b8c52d886cdbd1e12cf3a3892195b2f903cf6bd8
+|
+Lsrc/main/test/ua/com/lviv/tc/repositories/impl/BucketRepositoryImplTest.java,a\e\ae632178e28838085c267da71f16451817dd2b3a
+}
+Msrc/main/test/ua/com/lviv/tc/repositories/impl/ProductRepositoryImplTest.java,b\7\b7f6d0656b4bfc8623aea6884829f0faf63d3230

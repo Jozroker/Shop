@@ -32,4 +32,9 @@ public class BucketProduct {
     @JoinColumn(name = "product_id")
     private Product product;
 
+    public BucketProduct(Bucket bucket, Product product, Integer count) {
+        this.bucket = bucket;
+        this.product = product;
+        this.productCount = count;
+    }
 }

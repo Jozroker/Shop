@@ -1,16 +1,11 @@
 
-7
-java:S1220""Move this file to a named package.8Â€ì¼¦.
-X	java:S125"<This block of commented-out lines of code should be removed.(Þ˜ËÄ8Â€ì¼¦.
-]	java:S125	"<This block of commented-out lines of code should be removed.(ÉÈ£”ýÿÿÿÿ8Â€ì¼¦.
-]	java:S125"<This block of commented-out lines of code should be removed.(¯Ð÷³ÿÿÿÿÿ8Â€ì¼¦.
-]	java:S125"<This block of commented-out lines of code should be removed.(Çèý…üÿÿÿÿ8Â€ì¼¦.
-X	java:S125"<This block of commented-out lines of code should be removed.(â–Øð8Â€ì¼¦.
-]	java:S125"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Â€ì¼¦.
-]	java:S125"<This block of commented-out lines of code should be removed.(…ï…øÿÿÿÿ8Â€ì¼¦.
-]	java:S125%"<This block of commented-out lines of code should be removed.(±îÔ€ÿÿÿÿÿ8Â€ì¼¦.
-]	java:S1257"<This block of commented-out lines of code should be removed.(óûô»úÿÿÿÿ8Â€ì¼¦.
-X	java:S125F"<This block of commented-out lines of code should be removed.(Å†ßš8Â€ì¼¦.
-]	java:S125["<This block of commented-out lines of code should be removed.(–÷¾èüÿÿÿÿ8Â€ì¼¦.
-]	java:S125p"<This block of commented-out lines of code should be removed.(ˆ†úúÿÿÿÿ8Â€ì¼¦.
-]	java:S125z"<This block of commented-out lines of code should be removed.(Ø±£æÿÿÿÿÿ8Â€ì¼¦.
+h
+java:S1192I"FDefine a constant instead of duplicating this literal "fname" 3 times.(ã“ëÅøÿÿÿÿ8±¾ãú§.
+f
+java:S1192L"IDefine a constant instead of duplicating this literal "password" 3 times.(š„÷š8±¾ãú§.
+l
+java:S1192M"JDefine a constant instead of duplicating this literal "bucket_id" 3 times.(¼…“ùøÿÿÿÿ8±¾ãú§.
+c
+java:S1192J"FDefine a constant instead of duplicating this literal "lname" 3 times.(…ÙÞ—8±¾ãú§.
+M
+java:S1128"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8Ú„åú§.
